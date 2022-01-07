@@ -1,11 +1,8 @@
 import React from 'react';
 import {
     BrowserRouter as Router,
-    Switch,
     Route,
-    Link,
     Routes,
-    useLocation
 } from "react-router-dom";
 import Navbar from '../components/navbar/navbar.js';
 import Home from '../pages/staking/Staking.js';

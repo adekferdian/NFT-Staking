@@ -1,6 +1,5 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
-import Product1 from '../../../assets/product-1.png';
 import Expand from '../../../assets/expand.png';
 import Line from '../../../assets/line.png';
 import GggLogo from '../../../assets/ggg.png';

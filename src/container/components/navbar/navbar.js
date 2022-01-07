@@ -6,7 +6,7 @@ import "./navbar.css";
 export default function Navbar() {
     
     const [, forceUpdate] = useReducer(x => x + 1, 0);
-    const [menuNav,setMenuNav] = React.useState([
+    const [menuNav, ] = React.useState([
         {
             name: "JOBE",
             active: false,
@@ -32,9 +32,9 @@ export default function Navbar() {
     const handleClick = (idx) => {
         menuNav.map((el, item) => {
             if (item === idx) {
-                menuNav[idx].active = true
+                return menuNav[idx].active = true
             } else {
-                el.active = false
+                return el.active = false  
             };
         })
         console.log(menuNav);

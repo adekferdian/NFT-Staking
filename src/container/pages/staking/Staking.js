@@ -12,7 +12,7 @@ export default function Staking() {
     const [visibleWallet, setVisibleWallet] = React.useState(false);
     const [visibleDetail, setVisibleDetail] = React.useState(false);
     const [sentProduct, setSentProduct] = React.useState(false)
-    const [product, setProduct] = React.useState([
+    const [product, ] = React.useState([
         {
             img: Product1,
             stake: false,
@@ -25,7 +25,7 @@ export default function Staking() {
     const handleClick = (idx) => {
         product.map((el, item) => {
             if (item === idx) {
-                setSentProduct(el)
+                return setSentProduct(el)
                 // if (el.stake === true) {
                 //     el.stake = false;
                 // } else {
