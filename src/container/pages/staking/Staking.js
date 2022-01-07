@@ -34,7 +34,7 @@ export default function Staking() {
             }
         })
         setVisibleDetail(true)
-        forceUpdate()
+        return forceUpdate()
     };
 
     const buttonWallet = (data) => {
