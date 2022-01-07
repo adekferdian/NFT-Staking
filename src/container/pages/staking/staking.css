@@ -1,0 +1,107 @@
+.staking {
+    background: black;
+    height: 120vh;
+    width: 100%;
+    position: absolute;
+    top: 10;
+    z-index: 1;
+}
+.container {
+    background-image: url('../../../assets//bg-2.png');
+    height: 120vh;
+    top: 0;
+    opacity: .5;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.staking-content {
+    position: relative;
+    z-index: 2;
+}
+
+#metakey-title {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    text-align: center;
+    color: #CF00CA;
+    padding-top: 80px;
+}
+
+#desc-1 {
+    color: #CF00CA;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2%;
+    text-align: center;
+    padding-top: 40px;
+}
+#desc-2 {
+    width: 57%;
+    margin: auto;
+    color: #CF00CA;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#metakey-tag {
+    width: 40%;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2%;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.products-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 39%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.product-btn-purple {
+    width: 175px;
+    height: 41.04px;
+    background: #F901F3;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.product-btn-white {
+    width: 175px;
+    height: 41.04px;
+    background: #FFFFFF;
+    border: 2px solid #CF00CA;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#product-text {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    padding-top: 4px;
+}
+
+.wallet-btn-staking {
+    margin: auto;
+    width: 15%;
+    margin-top: 40px;
+}

@@ -1,0 +1,67 @@
+.navbar {
+    background: black;
+    height: 10vh;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.left-side {
+    width: 20%;
+}
+
+.right-side {
+    width: 70%;
+    margin-top: 30px;
+}
+
+.right-side-content {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#menu-nav {
+    font-size: 16px;
+    line-height: 18.75px;
+    font-weight: 400;
+    letter-spacing: 2%;
+    color: white;
+    padding-top: 10px;
+}
+#menu-nav-active {
+    font-size: 16px;
+    line-height: 18.75px;
+    font-weight: 400;
+    letter-spacing: 2%;
+    color: #F901F3;
+    padding-top: 10px;
+}
+
+.green-btn {
+    width: 150px;
+    height: 40px;
+    background: #05F5B4;
+    border-radius: 5px;
+}
+
+#launchpad, #ggl {
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 9px;
+    letter-spacing: 2%;
+}
+
+.purple-btn {
+    width: 191px;
+    height: 40px;
+    background: #F901F3;
+    border-radius: 5px;
+}

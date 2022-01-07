@@ -1,0 +1,84 @@
+.pop-up {
+    background: rgba(0, 0, 0, 0.44);;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+
+.pop-up-content {
+    width: 650px;
+    height: 594px;
+    background: #000000;
+    border: 1px solid #05F5B4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 180px;
+}
+
+#wallet-connect {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 2%;
+    text-align: center;
+    color: #05F5B4;
+    text-transform: uppercase;
+    padding-top: 65px;
+}
+
+
+.large-box {
+    width: 472px;
+    height: 266px;
+    background: black;
+    border-radius: 18px;
+    /* border: 2px solid #F901F3; */
+    margin: auto;
+    box-shadow:0px 0px 15px  #F901F3;
+    margin-top: 30px;
+}
+.small-box {
+    width: 472px;
+    height: 266px;
+    background: #000000;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.round {
+    margin: auto;
+    width: 15%;
+}
+
+.ellipse {
+    margin-top: 30px;
+}
+
+.connect-pop-up {
+    width: 402px;
+    height: 59px;
+    background: #05F5B4;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+#connect-pop-up-text, #cancel-pop-up-text {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cancel-pop-up {
+    width: 472px;
+    height: 59px;
+    background: #F50505;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+}

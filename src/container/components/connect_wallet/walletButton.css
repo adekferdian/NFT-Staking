@@ -1,0 +1,15 @@
+.btn-wallet {
+    width: 226px;
+    height: 53px;
+    background: #05F5B4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-wallet-text {
+    font-size: 24px;
+    font-weight: 700px;
+    text-align: center;
+    color: #0F121E;
+    padding-top: 7px;
+}

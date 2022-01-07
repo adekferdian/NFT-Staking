@@ -1,0 +1,365 @@
+.staking-detail {
+    position: absolute;
+    top: 10;
+    width: 100%;
+    z-index: 2;
+}
+
+.close-staking-detail {
+    display: flex;
+    justify-content: space-between;
+    width: 82.6%;
+    margin-top: 40px;
+}
+
+.close-form {
+    display: flex;
+    cursor: pointer;
+}
+
+.border-close {
+    width: 34px;
+    height: 34px;
+    background: #F901F3;
+    border-radius: 5px;
+}
+
+.logo-close {
+    width: 24px;
+    height: 24px;
+    text-align-last: center;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#back {
+    font-size: 18px;
+    color: #CF00CA;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+#staking-detail-text {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    text-align: center;
+    color: #CF00CA;
+}
+
+.staking-detail-container {
+    display: flex;
+    justify-content: space-between;
+    width: 54%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.product-detail-container {
+    width: 263px;
+}
+
+.info-container {
+    width: 263px;
+    height: 164px;
+    border: 1px solid #F901F3;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-top: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.header-info-container {
+    height: 30px;
+    background: #2C3350;
+    border: 1px solid #F901F3;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+#item-info {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.detail-item-info {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 90%;
+    margin: auto;
+}
+
+.col-1 {
+    width: 50%;
+}
+
+#col-1-line1, #col-1-line2, #col-1-line3, #col-1-line4 {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14.06px;
+    padding-top: 15px;
+}
+
+.col-2 {
+    width: 10%;
+}
+
+#col-2-line-1, #col-2-line-2, #col-2-line-3, #col-2-line-4 {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14.06px;
+    padding-top: 15px;
+}
+
+.col-3 {
+    width: 40%;
+}
+
+.collection-info {
+    width: 263px;
+    height: 30px;
+    border: 1px solid #F901F3;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-top: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.header-collection-info {
+    height: 30px;
+    background: #2C3350;
+    border: 1px solid #F901F3;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0px 0px;   
+}
+
+.flex-header-collection-info {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+#info-collection-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: white;
+}
+
+.detail-description {
+    width: 470px;
+    height: 40%;
+    background: #0F121E;
+    border: 1px solid #F901F3;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.detail-description-unstake {
+    width: 470px;
+    height: 46%;
+    background: #0F121E;
+    border: 1px solid #F901F3;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.wrapper-detail-description {
+    width: 80%;
+    margin: auto;
+}
+
+#title-description-detail {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: #05F5B4;
+    padding-top: 20px;
+}
+
+#sub-title-description-detail {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: white;
+    padding-top: 5px;
+}
+
+#text-description-detail {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2%;
+    color: white;
+    padding-top: 10px;
+}
+
+.stake-btn {
+    width: 75px;
+    height: 30px;
+    background: #05F5B4;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#stake-btn-title {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2%;
+    color: black;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#nft-boost {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: #F901F3;
+    padding-top: 85px;
+}
+
+.nft-boost-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+#staking-boost, #additional-pool {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: white;
+}
+
+#value-staking-boost, #value-additional-pool {
+    color: #05F5B4;
+}
+
+
+.owner-info {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.border-logo-owner {
+    width: 151px;
+    height: 151px;
+    background: #0F121E;
+    border: 1px solid #F901F3;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.owner-img {
+    width: 200px;
+    margin-left: -25px;
+}
+
+#logo-owner-info {
+    width: 200px;
+    height: 156px;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.description-company {
+    margin-top: 40px;
+}
+
+#ggg-owner {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: white;
+}
+
+#link-ggg {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2%;
+    color: white;
+    padding-top: 10px;
+}
+
+.stake-btn-action-unstake {
+    display: flex;
+    justify-content: space-between;
+    width: 34%;
+    margin-top: 15px;
+}
+
+.button-unstake {
+    width: 101.92px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#unstake-title-btn {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #C4C4C4;
+    padding-top: 3px;
+}
+
+.border-button-unstake {
+    width: 15px;
+    height: 15px;
+    background: #F50505;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.wrapper-close-logo-unstake {
+    margin-top: -2px;
+}
+
+.close-button-unstake {
+    width: 10.71px;
+    height: 10.71px;
+    margin-left: 2px;
+}
+
+.unstake-duration {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.duration-times {
+    width: 89.61px;
+    height: 30px;
+    background: #05F5B4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#duration-time-title {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2%;
+    color: black;
+    text-align: center;
+    padding-top: 4px;
+}
