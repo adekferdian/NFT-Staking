@@ -25,12 +25,7 @@ export default function Staking() {
     const handleClick = (idx) => {
         product.map((el, item) => {
             if (item === idx) {
-                setSentProduct(el)
-                // if (el.stake === true) {
-                //     el.stake = false;
-                // } else {
-                //     el.stake = true;
-                // }
+                setSentProduct(el);
             };
             return 1
         })

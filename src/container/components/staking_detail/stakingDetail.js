@@ -7,7 +7,11 @@ import Close from '../../../assets/Close.png';
 import './stakingDetail.css';
 
 export default function StakingDetail(props) {
+    console.log(props);
     const { img, stake } = props.sentProduct;
+    const [visibleTime, setVisibleTime] = React.useState(false);
+    const [alertSubmit, setAlertSubmit] = React.useState("")
+    const [visibleAlertSubmit, setVisibleAlertSubmit] = React.useState(false)
     const unstakeDuration = [
         {
             title: "30 Days"
@@ -22,8 +26,23 @@ export default function StakingDetail(props) {
     const handleClose = () => {
         props.handleCloseDetail(false)
     };
+    const handleSubmit = (el, idx) => {
+        setVisibleAlertSubmit(true);
+        setAlertSubmit(`You have succesfully stake, now you can unstake on ${el.title}`);
+        setVisibleTime("ok")
+    };
+
     return (
         <div className="staking-detail">
+            {
+                visibleAlertSubmit ?
+                <div className="alert-submit">
+                    <div className="container-alert-submit">
+                        <Typography id="alert-submit-title">{alertSubmit}</Typography>
+                    </div>
+                </div>
+                    :null
+            }
             <div className="close-staking-detail">
                 <div></div>
                 <div className="close-form" onClick={() => handleClose()}>
@@ -81,8 +100,31 @@ export default function StakingDetail(props) {
                             </Typography>
                             {
                                 stake === false ?
-                                    <div className="stake-btn">
-                                        <Typography id="stake-btn-title">Stake</Typography>
+                                    <div>
+                                        {
+                                            visibleTime === false ?
+                                            <div className="stake-btn" onClick={() => setVisibleTime(true)}>
+                                                <Typography id="stake-btn-title">Stake</Typography>
+                                            </div>
+                                            : visibleTime === true ?
+                                            <div className="unstake-duration">
+                                                {
+                                                    unstakeDuration.map((el, idx) => {
+                                                        return (
+                                                            <div className="duration-times" key={idx} onClick={() => handleSubmit(el, idx)}>
+                                                                <Typography id="duration-time-title">{el.title}</Typography>
+                                                            </div>
+                                                        )
+                                                    })
+                                                }
+                                            </div>
+                                            :
+                                            <div>
+                                                <div className="button-unstake-1">
+                                                    <Typography id="unstake-title-btn-1">Unstake</Typography>
+                                                </div>
+                                            </div>
+                                        }
                                     </div>
                                     :
                                     <div className="stake-btn-unstake">
