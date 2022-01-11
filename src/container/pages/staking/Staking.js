@@ -11,19 +11,44 @@ export default function Staking() {
     const [, forceUpdate] = useReducer(x => x + 1, 0);
     const [visibleWallet, setVisibleWallet] = React.useState(false);
     const [visibleDetail, setVisibleDetail] = React.useState(false);
-    const [sentProduct, setSentProduct] = React.useState(false)
-    const [product, ] = React.useState([
+    const [visibleAlert, setVisibleAlert] = React.useState(false);
+    const [sentProduct, setSentProduct] = React.useState(false);
+    const [selectedNft, setSelectedNft] = React.useState([]);
+    const [alertLength, setAlertLength] = React.useState(false)
+    const [products, ] = React.useState([
         {
             img: Product1,
             stake: false,
+            name: "Circinus",
+            checked: false
         },
         {
             img: Product2,
             stake: true,
+            name: "Andromeda",
+            checked: false
+        },
+        {
+            img: Product1,
+            stake: false,
+            name: "Andromeda",
+            checked: false
+        },
+        {
+            img: Product2,
+            stake: false,
+            name: "Andromeda",
+            checked: false
+        },
+        {
+            img: Product2,
+            stake: true,
+            name: "Andromeda",
+            checked: false
         },
     ]);
     const handleClick = (idx) => {
-        product.map((el, item) => {
+        products.map((el, item) => {
             if (item === idx) {
                 setSentProduct(el);
             };
@@ -42,6 +67,26 @@ export default function Staking() {
         setVisibleDetail(data)
         forceUpdate()
     };
+
+    const onSubmit = (status, data, time) => {
+        console.log(status, data, time);
+        setVisibleAlert(status);
+        let temp = []
+        if (data.length <= 1) {
+            setAlertLength(false)
+            setSelectedNft(`Succes stake ${data[0].name}. You can unstake in ${time}`);
+        } else {
+            data.map((el) => {
+                return temp.push(el.name);
+            });
+            setAlertLength(true);
+            setSelectedNft(`Succes stake ${temp}. You can unstake in ${time}`);
+        }
+        forceUpdate();
+        setTimeout(() => {
+            setVisibleAlert(false);
+        }, 4000)
+    };
     return (
         <div>
             <div className="staking">
@@ -51,6 +96,13 @@ export default function Staking() {
             {
                 visibleDetail === false ?
                     <div className="staking-content">
+                        {
+                            visibleAlert === true ?
+                                <div className={alertLength === true ? "alert-status" : "alert-status-default"}>
+                                    <Typography id="title-alert">{selectedNft}</Typography>
+                                </div>
+                            :null
+                        }
                         <Typography id="metakey-title">METAKEY STAKING</Typography>
                         <div className="metakey-description">
                             <Typography id="desc-1">Join the Metakey to earn rent in BLOK paid monthly</Typography>
@@ -59,7 +111,7 @@ export default function Staking() {
                         <Typography id="metakey-tag">On the 1st of every month, the JOBE is paused for rewards to be added which can be claimed from the 2nd onwards</Typography>
                         <div className="products-wrapper">
                             {
-                                product.map((el, idx) => {
+                                products.map((el, idx) => {
                                     return (
                                         <div className="products" key={idx}>
                                             <img src={el.img} alt="" />
@@ -87,6 +139,8 @@ export default function Staking() {
                     : <StakingDetail
                         handleCloseDetail={handleCloseDetail}
                         sentProduct={sentProduct}
+                        products={products}
+                        onSubmit={onSubmit}
                       />
             }
         </div>

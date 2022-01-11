@@ -8,12 +8,39 @@
 }
 .container {
     background-image: url('../../../assets//bg-2.png');
-    height: 120vh;
+    height: 100%;
     top: 0;
     opacity: .5;
     width: 100%;
     position: absolute;
     z-index: 1;
+}
+
+.alert-status-default {
+    position: absolute;
+    right: 8.6em;
+    top: 10px;
+    width: 30%;
+    height: 40px;
+    background: black;
+    border: 1px solid #F901F3;
+}
+.alert-status {
+    position: absolute;
+    right: 8.6em;
+    top: 10px;
+    width: 30%;
+    height: 60px;
+    background: black;
+    border: 1px solid #F901F3;
+}
+
+#title-alert {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
 }
 
 .staking-content {
@@ -63,9 +90,17 @@
 .products-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    height: 370px;
     width: 39%;
+    max-width: 39%;
     margin: auto;
     margin-top: 25px;
+    overflow: auto;
+}
+
+.products {
+    margin-bottom: 25px;
 }
 
 .product-btn-purple {

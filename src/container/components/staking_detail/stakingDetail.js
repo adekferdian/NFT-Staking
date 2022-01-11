@@ -4,14 +4,17 @@ import Expand from '../../../assets/expand.png';
 import Line from '../../../assets/line.png';
 import GggLogo from '../../../assets/ggg.png';
 import Close from '../../../assets/Close.png';
+import NftModal from '../nfts_modal/nftModal';
 import './stakingDetail.css';
 
 export default function StakingDetail(props) {
     console.log(props);
     const { img, stake } = props.sentProduct;
     const [visibleTime, setVisibleTime] = React.useState(false);
-    const [alertSubmit, setAlertSubmit] = React.useState("")
-    const [visibleAlertSubmit, setVisibleAlertSubmit] = React.useState(false)
+    const [alertSubmit, setAlertSubmit] = React.useState("");
+    const [visibleAlertSubmit, ] = React.useState(false);
+    const [visibleNft, setVisibleNft] = React.useState(false);
+    const [visibleNftUnstake, setVisibleNftUnstake] = React.useState(false);
     const unstakeDuration = [
         {
             title: "30 Days"
@@ -26,10 +29,52 @@ export default function StakingDetail(props) {
     const handleClose = () => {
         props.handleCloseDetail(false)
     };
-    const handleSubmit = (el, idx) => {
-        setVisibleAlertSubmit(true);
-        setAlertSubmit(`You have succesfully stake, now you can unstake on ${el.title}`);
-        setVisibleTime("ok")
+    const handleSubmit = (data, flag, selectedTime) => {
+        console.log(data, flag, selectedTime);
+        if (flag === "stake") {
+            if (data.length <= 1) {
+                // setVisibleAlertSubmit(true);
+                setAlertSubmit(`You have succesfully stake, now you can unstake on ${selectedTime.title}`);
+                props.onSubmit(true, data, selectedTime.title);
+                setVisibleTime("ok")
+                setTimeout(() => {
+                    props.handleCloseDetail(false)
+                }, 500)
+            } else {
+                let temp = []
+                data.map((el) => {
+                    return temp.push(el.name)
+                })
+                let alert = temp.toString()
+                setAlertSubmit(`You have succesfully unstake ${alert}, now you can stake on ${data}`);
+                props.onSubmit(true, data, selectedTime.title);
+                console.log(alert);
+            }
+        } else {
+            if (data.length <= 1) {
+                // setVisibleAlertSubmit(true);
+                setAlertSubmit(`You have succesfully unstake, now you can stake on ${selectedTime.title}`);
+                props.onSubmit(true, data, selectedTime.title);
+                setVisibleTime("ok")
+                setTimeout(() => {
+                    props.handleCloseDetail(false)
+                }, 500)
+            } else {
+                let temp = []
+                data.map((el) => {
+                    return temp.push(el.name)
+                })
+                let alert = temp.toString()
+                setAlertSubmit(`You have succesfully unstake ${alert}, now you can stake on ${data}`);
+                props.onSubmit(true, data, selectedTime.title);
+                console.log(alert);
+            }
+        }
+    };
+
+    const handleCloseModal = (data) => {
+        setVisibleNft(data)
+        setVisibleNftUnstake(data)
     };
 
     return (
@@ -42,6 +87,26 @@ export default function StakingDetail(props) {
                     </div>
                 </div>
                     :null
+            }
+            {
+                visibleNft ?
+                <NftModal
+                    products={props.products}
+                    handleCloseModal={handleCloseModal}
+                    flag="stake"
+                    handleSubmit={handleSubmit}
+                />
+                :null
+            }
+            {
+                visibleNftUnstake ?
+                <NftModal
+                    products={props.products}
+                    handleCloseModal={handleCloseModal}
+                    flag="unstake"
+                    handleSubmit={handleSubmit}
+                />
+                :null
             }
             <div className="close-staking-detail">
                 <div></div>
@@ -103,7 +168,7 @@ export default function StakingDetail(props) {
                                     <div>
                                         {
                                             visibleTime === false ?
-                                            <div className="stake-btn" onClick={() => setVisibleTime(true)}>
+                                            <div className="stake-btn" onClick={() => setVisibleNft(true)}>
                                                 <Typography id="stake-btn-title">Stake</Typography>
                                             </div>
                                             : visibleTime === true ?
@@ -111,7 +176,7 @@ export default function StakingDetail(props) {
                                                 {
                                                     unstakeDuration.map((el, idx) => {
                                                         return (
-                                                            <div className="duration-times" key={idx} onClick={() => handleSubmit(el, idx)}>
+                                                            <div className="duration-times" key={idx}>
                                                                 <Typography id="duration-time-title">{el.title}</Typography>
                                                             </div>
                                                         )
@@ -129,16 +194,16 @@ export default function StakingDetail(props) {
                                     :
                                     <div className="stake-btn-unstake">
                                         <div className="stake-btn-action-unstake">
-                                            <div className="button-unstake">
+                                            <div className="button-unstake" onClick={() => setVisibleNftUnstake(true)}>
                                                 <Typography id="unstake-title-btn">Unstake</Typography>
                                             </div>
-                                            <div className="border-button-unstake">
+                                            {/* <div className="border-button-unstake">
                                                 <div className="wrapper-close-logo-unstake">
                                                     <img src={Close} alt="" className="close-button-unstake" />
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
-                                        <div className="unstake-duration">
+                                        {/* <div className="unstake-duration">
                                             {
                                                 unstakeDuration.map((el, idx) => {
                                                     return (
@@ -148,7 +213,7 @@ export default function StakingDetail(props) {
                                                     )
                                                 })
                                             }
-                                        </div>
+                                        </div> */}
                                     </div>
                             }
                         </div>
