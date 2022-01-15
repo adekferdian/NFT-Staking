@@ -1,5 +1,5 @@
 import React, {useReducer} from 'react';
-import useWindowDimensions from '../hooks/useDimension';
+import useWindowDimensions from '../../hooks/useDimension.js';
 import { Typography } from '@material-ui/core';
 import GggLogo from '../../../assets/ggg.png';
 import "./navbar.css";
