@@ -1,10 +1,7 @@
 import React, {useReducer} from 'react';
 import './nftModal.css';
-import Ggg from '../../../assets/ggg.png';
-import Checkbox from '@mui/material/Checkbox';
 import Close from '../../../assets/Close.png';
 import { Typography } from '@material-ui/core';
-const label = { inputProps: { 'aria-label': 'Checkbox demo' }, };
 
 export default function NftModal(props) {
     console.log(props);
@@ -128,7 +125,7 @@ export default function NftModal(props) {
                                         <div className="checkbox">
                                             {
                                                 el.checked ?
-                                                <img className="checked" src="https://img.icons8.com/color/48/000000/checkmark--v1.png"/>
+                                                <img className="checked" src="https://img.icons8.com/color/48/000000/checkmark--v1.png" alt=""/>
                                                 :null
                                             }
                                         </div>
@@ -156,7 +153,7 @@ export default function NftModal(props) {
                                         <div className="checkbox">
                                             {
                                                 el.checked ?
-                                                <img className="checked" src="https://img.icons8.com/color/48/000000/checkmark--v1.png"/>
+                                                <img className="checked" src="https://img.icons8.com/color/48/000000/checkmark--v1.png" alt=""/>
                                                 :null
                                             }
                                         </div>
