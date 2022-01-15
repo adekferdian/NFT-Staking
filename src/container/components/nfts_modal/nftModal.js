@@ -109,59 +109,59 @@ export default function NftModal(props) {
                     {
                         products.map((el, idx) => {
                             if (el.stake === false && flag === "stake") {
+                                let dataLength = 0;
+                                dataLength ++;
+                                console.log(dataLength);
                                 return (
-                                    <div className="nft-contents" key={idx}>
-                                        <div className="left-nft-content">
-                                            <img src={Ggg} alt="" className="nft-content-logo" />
-                                            <Typography id="nft-content-title">{el.name}</Typography>
+                                    <div className="nft-contents" key={idx} onClick={() => {
+                                        if (el.checked === false) {
+                                            el.checked = true;
+                                            setSelectedNft(true);
+                                            setAlertError(false);
+                                        } else {
+                                            el.checked = false;
+                                            setSelectedNft(false);
+                                            setAlertError(false);
+                                        }
+                                        forceUpdate();
+                                    }}>
+                                        <div className="checkbox">
+                                            {
+                                                el.checked ?
+                                                <img className="checked" src="https://img.icons8.com/color/48/000000/checkmark--v1.png"/>
+                                                :null
+                                            }
                                         </div>
-                                        <div className="right-nft-content">
-                                            <Checkbox {...label} color="success"
-                                            style={{
-                                                background: 'white'
-                                            }}
-                                            onClick={() => {
-                                                if (el.checked === false) {
-                                                    el.checked = true;
-                                                    setSelectedNft(true);
-                                                    setAlertError(false);
-                                                } else {
-                                                    el.checked = false;
-                                                    setSelectedNft(false);
-                                                    setAlertError(false);
-                                                }
-                                                forceUpdate();
-                                            }}
-                                            />
-                                        </div>
+                                        <img src={el.img} alt="" className="nft-content-logo" />
+                                        <Typography id="nft-content-title">{el.name}</Typography>
                                     </div>
                                 )
                             } else if (el.stake === true && flag === "unstake") {
+                                let dataLength = 0;
+                                dataLength ++;
+                                console.log(dataLength);
                                 return (
-                                    <div className="nft-contents" key={idx}>
-                                        <div className="left-nft-content">
-                                            <img src={Ggg} alt="" className="nft-content-logo" />
-                                            <Typography id="nft-content-title">{el.name}</Typography>
+                                    <div className="nft-contents" key={idx} onClick={() => {
+                                        if (el.checked === false) {
+                                            el.checked = true;
+                                            setSelectedNft(true);
+                                            setAlertError(false);
+                                        } else {
+                                            el.checked = false;
+                                            setSelectedNft(false);
+                                            setAlertError(false);
+                                        }
+                                        forceUpdate();
+                                    }}>
+                                        <div className="checkbox">
+                                            {
+                                                el.checked ?
+                                                <img className="checked" src="https://img.icons8.com/color/48/000000/checkmark--v1.png"/>
+                                                :null
+                                            }
                                         </div>
-                                        <div className="right-nft-content">
-                                            <Checkbox {...label} defaultChecked color="success"
-                                            style={{
-                                                background: 'white'
-                                            }}
-                                            onClick={() => {
-                                                if (el.checked === false) {
-                                                    el.checked = true;
-                                                    setSelectedNft(true);
-                                                    setAlertError(false);
-                                                } else {
-                                                    el.checked = false;
-                                                    setSelectedNft(false);
-                                                    setAlertError(false);
-                                                }
-                                                forceUpdate();
-                                            }}
-                                            />
-                                        </div>
+                                        <img src={el.img} alt="" className="nft-content-logo" />
+                                        <Typography id="nft-content-title">{el.name}</Typography>
                                     </div>
                                 )
                             };

@@ -68,19 +68,19 @@ export default function Staking() {
         forceUpdate()
     };
 
-    const onSubmit = (status, data, time) => {
+    const onSubmit = (status, data, time, message) => {
         console.log(status, data, time);
         setVisibleAlert(status);
         let temp = []
         if (data.length <= 1) {
             setAlertLength(false)
-            setSelectedNft(`Succes stake ${data[0].name}. You can unstake in ${time}`);
+            setSelectedNft(message);
         } else {
             data.map((el) => {
                 return temp.push(el.name);
             });
             setAlertLength(true);
-            setSelectedNft(`Succes stake ${temp}. You can unstake in ${time}`);
+            setSelectedNft(message);
         }
         forceUpdate();
         setTimeout(() => {
@@ -136,12 +136,13 @@ export default function Staking() {
                                 : null
                         }
                     </div>
-                    : <StakingDetail
+                : 
+                    <StakingDetail
                         handleCloseDetail={handleCloseDetail}
                         sentProduct={sentProduct}
                         products={products}
                         onSubmit={onSubmit}
-                      />
+                    />
             }
         </div>
     );

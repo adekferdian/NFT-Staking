@@ -34,8 +34,9 @@ export default function StakingDetail(props) {
         if (flag === "stake") {
             if (data.length <= 1) {
                 // setVisibleAlertSubmit(true);
-                setAlertSubmit(`You have succesfully stake, now you can unstake on ${selectedTime.title}`);
-                props.onSubmit(true, data, selectedTime.title);
+                const message = `You have succesfully stake, now you can unstake on ${selectedTime.title}`
+                setAlertSubmit(message);
+                props.onSubmit(true, data, selectedTime.title, message);
                 setVisibleTime("ok")
                 setTimeout(() => {
                     props.handleCloseDetail(false)
@@ -46,15 +47,17 @@ export default function StakingDetail(props) {
                     return temp.push(el.name)
                 })
                 let alert = temp.toString()
-                setAlertSubmit(`You have succesfully unstake ${alert}, now you can stake on ${data}`);
-                props.onSubmit(true, data, selectedTime.title);
+                const message = `You have succesfully unstake ${alert}, now you can stake on ${selectedTime.title}`
+                setAlertSubmit(message);
+                props.onSubmit(true, data, selectedTime.title, message);
                 console.log(alert);
             }
-        } else {
+        } else if (flag === "unstake") {
             if (data.length <= 1) {
                 // setVisibleAlertSubmit(true);
-                setAlertSubmit(`You have succesfully unstake, now you can stake on ${selectedTime.title}`);
-                props.onSubmit(true, data, selectedTime.title);
+                const message = `You have succesfully unstake, now you can stake on ${selectedTime.title}`
+                setAlertSubmit(message);
+                props.onSubmit(true, data, selectedTime.title, message);
                 setVisibleTime("ok")
                 setTimeout(() => {
                     props.handleCloseDetail(false)
@@ -64,9 +67,10 @@ export default function StakingDetail(props) {
                 data.map((el) => {
                     return temp.push(el.name)
                 })
-                let alert = temp.toString()
-                setAlertSubmit(`You have succesfully unstake ${alert}, now you can stake on ${data}`);
-                props.onSubmit(true, data, selectedTime.title);
+                let alert = temp.toString();
+                const message = `You have succesfully unstake ${alert}, now you can stake on ${selectedTime.title}`;
+                setAlertSubmit(message);
+                props.onSubmit(true, data, selectedTime.title, message);
                 console.log(alert);
             }
         }
@@ -79,100 +83,132 @@ export default function StakingDetail(props) {
 
     return (
         <div className="staking-detail">
-            {
-                visibleAlertSubmit ?
-                <div className="alert-submit">
-                    <div className="container-alert-submit">
-                        <Typography id="alert-submit-title">{alertSubmit}</Typography>
+            <div className="wrapper-detail">
+                {
+                    visibleAlertSubmit ?
+                    <div className="alert-submit">
+                        <div className="container-alert-submit">
+                            <Typography id="alert-submit-title">{alertSubmit}</Typography>
+                        </div>
                     </div>
-                </div>
+                        :null
+                }
+                {
+                    visibleNft ?
+                    <NftModal
+                        products={props.products}
+                        handleCloseModal={handleCloseModal}
+                        flag="stake"
+                        handleSubmit={handleSubmit}
+                    />
                     :null
-            }
-            {
-                visibleNft ?
-                <NftModal
-                    products={props.products}
-                    handleCloseModal={handleCloseModal}
-                    flag="stake"
-                    handleSubmit={handleSubmit}
-                />
-                :null
-            }
-            {
-                visibleNftUnstake ?
-                <NftModal
-                    products={props.products}
-                    handleCloseModal={handleCloseModal}
-                    flag="unstake"
-                    handleSubmit={handleSubmit}
-                />
-                :null
-            }
-            <div className="close-staking-detail">
-                <div></div>
-                <div className="close-form" onClick={() => handleClose()}>
-                    <div className="border-close">
-                        <img src={Close} alt="" className="logo-close" />
-                    </div>
-                    <Typography id="back">Back</Typography>
-                </div>
-            </div>
-            <Typography id="staking-detail-text">METAKEY STAKING</Typography>
-            <div className="staking-detail-container">
-                <div className="left-detail-container">
-                    <img src={img} alt="" className="product-detail-container" />
-                    <div className="info-container">
-                        <div className="header-info-container">
-                            <div className="flex-header">
-                                <Typography id="item-info">Item Info</Typography>
-                                <img src={Expand} alt="" />
-                            </div>
+                }
+                {
+                    visibleNftUnstake ?
+                    <NftModal
+                        products={props.products}
+                        handleCloseModal={handleCloseModal}
+                        flag="unstake"
+                        handleSubmit={handleSubmit}
+                    />
+                    :null
+                }
+                <div className="close-staking-detail">
+                    <div></div>
+                    <div className="close-form" onClick={() => handleClose()}>
+                        <div className="border-close">
+                            <img src={Close} alt="" className="logo-close" />
                         </div>
-                        <div className="detail-item-info">
-                            <div className="col-1">
-                                <Typography id="col-1-line1">NFT Contract ID</Typography>
-                                <Typography id="col-1-line2">Token ID</Typography>
-                                <Typography id="col-1-line3">Creator’s Address</Typography>
-                                <Typography id="col-1-line4">Owner Address</Typography>
+                        <Typography id="back">Back</Typography>
+                    </div>
+                </div>
+                <Typography id="staking-detail-text">METAKEY STAKING</Typography>
+                <div className="staking-detail-container">
+                    <div className="left-detail-container">
+                        <img src={img} alt="" className="product-detail-container" />
+                        <div className="info-container">
+                            <div className="header-info-container">
+                                <div className="flex-header">
+                                    <Typography id="item-info">Item Info</Typography>
+                                    <img src={Expand} alt="" />
+                                </div>
                             </div>
-                            <div className="col-2">
-                                <Typography id="col-2-line-1">:</Typography>
-                                <Typography id="col-2-line-2">:</Typography>
-                                <Typography id="col-2-line-3">:</Typography>
-                                <Typography id="col-2-line-4">:</Typography>
-                            </div>
-                            <div className="col-3">
+                            <div className="detail-item-info">
+                                <div className="col-1">
+                                    <Typography id="col-1-line1">NFT Contract ID</Typography>
+                                    <Typography id="col-1-line2">Token ID</Typography>
+                                    <Typography id="col-1-line3">Creator’s Address</Typography>
+                                    <Typography id="col-1-line4">Owner Address</Typography>
+                                </div>
+                                <div className="col-2">
+                                    <Typography id="col-2-line-1">:</Typography>
+                                    <Typography id="col-2-line-2">:</Typography>
+                                    <Typography id="col-2-line-3">:</Typography>
+                                    <Typography id="col-2-line-4">:</Typography>
+                                </div>
+                                <div className="col-3">
 
+                                </div>
+                            </div>
+                        </div>
+                        <div className="collection-info">
+                            <div className="header-collection-info">
+                                <div className="flex-header-collection-info">
+                                    <Typography id="info-collection-title">Collection Info</Typography>
+                                    <img src={Expand} alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className="collection-info">
-                        <div className="header-collection-info">
-                            <div className="flex-header-collection-info">
-                                <Typography id="info-collection-title">Collection Info</Typography>
-                                <img src={Expand} alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="right-detail-container">
-                    <div className={stake === false ? "detail-description" : "detail-description-unstake"}>
-                        <div className="wrapper-detail-description">
-                            <Typography id="title-description-detail">Lorem Ipsum</Typography>
-                            <Typography id="sub-title-description-detail">Lorem Ipsum</Typography>
-                            <Typography id="text-description-detail">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra arcu lacus, imperdiet facilisis bibendum risus, purus ut. Porta mi, duis etiam lectus dis sed fermentum. Mi nunc est arcu, est in pretium bibendum. At tempus, quam tellus placerat libero, morbi pharetra. Vestibulum ut tincidunt gravida diam a amet eget adipiscing.
-                            </Typography>
-                            {
-                                stake === false ?
-                                    <div>
-                                        {
-                                            visibleTime === false ?
-                                            <div className="stake-btn" onClick={() => setVisibleNft(true)}>
-                                                <Typography id="stake-btn-title">Stake</Typography>
+                    <div className="right-detail-container">
+                        <div className={stake === false ? "detail-description" : "detail-description-unstake"}>
+                            <div className="wrapper-detail-description">
+                                <Typography id="title-description-detail">Lorem Ipsum</Typography>
+                                <Typography id="sub-title-description-detail">Lorem Ipsum</Typography>
+                                <Typography id="text-description-detail">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra arcu lacus, imperdiet facilisis bibendum risus, purus ut. Porta mi, duis etiam lectus dis sed fermentum. Mi nunc est arcu, est in pretium bibendum. At tempus, quam tellus placerat libero, morbi pharetra. Vestibulum ut tincidunt gravida diam a amet eget adipiscing.
+                                </Typography>
+                                {
+                                    stake === false ?
+                                        <div>
+                                            {
+                                                visibleTime === false ?
+                                                <div className="stake-btn" onClick={() => setVisibleNft(true)}>
+                                                    <Typography id="stake-btn-title">Stake</Typography>
+                                                </div>
+                                                : visibleTime === true ?
+                                                <div className="unstake-duration">
+                                                    {
+                                                        unstakeDuration.map((el, idx) => {
+                                                            return (
+                                                                <div className="duration-times" key={idx}>
+                                                                    <Typography id="duration-time-title">{el.title}</Typography>
+                                                                </div>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                                :
+                                                <div>
+                                                    <div className="button-unstake-1">
+                                                        <Typography id="unstake-title-btn-1">Unstake</Typography>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                        :
+                                        <div className="stake-btn-unstake">
+                                            <div className="stake-btn-action-unstake">
+                                                <div className="button-unstake" onClick={() => setVisibleNftUnstake(true)}>
+                                                    <Typography id="unstake-title-btn">Unstake</Typography>
+                                                </div>
+                                                {/* <div className="border-button-unstake">
+                                                    <div className="wrapper-close-logo-unstake">
+                                                        <img src={Close} alt="" className="close-button-unstake" />
+                                                    </div>
+                                                </div> */}
                                             </div>
-                                            : visibleTime === true ?
-                                            <div className="unstake-duration">
+                                            {/* <div className="unstake-duration">
                                                 {
                                                     unstakeDuration.map((el, idx) => {
                                                         return (
@@ -182,57 +218,27 @@ export default function StakingDetail(props) {
                                                         )
                                                     })
                                                 }
-                                            </div>
-                                            :
-                                            <div>
-                                                <div className="button-unstake-1">
-                                                    <Typography id="unstake-title-btn-1">Unstake</Typography>
-                                                </div>
-                                            </div>
-                                        }
-                                    </div>
-                                    :
-                                    <div className="stake-btn-unstake">
-                                        <div className="stake-btn-action-unstake">
-                                            <div className="button-unstake" onClick={() => setVisibleNftUnstake(true)}>
-                                                <Typography id="unstake-title-btn">Unstake</Typography>
-                                            </div>
-                                            {/* <div className="border-button-unstake">
-                                                <div className="wrapper-close-logo-unstake">
-                                                    <img src={Close} alt="" className="close-button-unstake" />
-                                                </div>
                                             </div> */}
                                         </div>
-                                        {/* <div className="unstake-duration">
-                                            {
-                                                unstakeDuration.map((el, idx) => {
-                                                    return (
-                                                        <div className="duration-times" key={idx}>
-                                                            <Typography id="duration-time-title">{el.title}</Typography>
-                                                        </div>
-                                                    )
-                                                })
-                                            }
-                                        </div> */}
-                                    </div>
-                            }
-                        </div>
-                    </div>
-                    <Typography id="nft-boost">NFT Boost</Typography>
-                    <img src={Line} alt="" />
-                    <div className="nft-boost-detail">
-                        <Typography id="staking-boost">Staking Boost: <span id="value-staking-boost">10%</span></Typography>
-                        <Typography id="additional-pool">Additional Pool Weight: <span id="value-additional-pool">10%</span></Typography>
-                    </div>
-                    <div className="owner-info">
-                        <div className="border-logo-owner">
-                            <div className="owner-img">
-                                <img src={GggLogo} alt="" id="logo-owner-info" />
+                                }
                             </div>
                         </div>
-                        <div className="description-company">
-                            <Typography id="ggg-owner">GGG</Typography>
-                            <Typography id="link-ggg">https://goodgamesguild.com</Typography>
+                        <Typography id="nft-boost">NFT Boost</Typography>
+                        <img src={Line} alt="" className="divider" />
+                        <div className="nft-boost-detail">
+                            <Typography id="staking-boost">Staking Boost: <span id="value-staking-boost">10%</span></Typography>
+                            <Typography id="additional-pool">Additional Pool Weight: <span id="value-additional-pool">10%</span></Typography>
+                        </div>
+                        <div className="owner-info">
+                            <div className="border-logo-owner">
+                                <div className="owner-img">
+                                    <img src={GggLogo} alt="" id="logo-owner-info" />
+                                </div>
+                            </div>
+                            <div className="description-company">
+                                <Typography id="ggg-owner">GGG</Typography>
+                                <Typography id="link-ggg">https://goodgamesguild.com</Typography>
+                            </div>
                         </div>
                     </div>
                 </div>

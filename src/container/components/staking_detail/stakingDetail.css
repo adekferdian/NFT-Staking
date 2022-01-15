@@ -3,6 +3,7 @@
     top: 10;
     width: 100%;
     z-index: 2;
+    /* height: 100%; */
 }
 
 .close-staking-detail {
@@ -403,4 +404,340 @@
     font-weight: 700;
     letter-spacing: 2%;
     padding-top: 15px;
+}
+
+@media screen and (max-width: 1399px) and (min-width: 1350px) {
+    .staking-detail-container {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        margin: auto;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1349px) and (min-width: 1300px) {
+    .staking-detail-container {
+        display: flex;
+        justify-content: space-between;
+        width: 57%;
+        margin: auto;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1299px) and (min-width: 1250px) {
+    .staking-detail-container {
+        display: flex;
+        justify-content: space-between;
+        width: 59%;
+        margin: auto;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1249px) and (min-width: 1200px) {
+    .staking-detail-container {
+        display: flex;
+        justify-content: space-between;
+        width: 62%;
+        margin: auto;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1150px) {
+    .staking-detail-container {
+        display: flex;
+        justify-content: space-between;
+        width: 64%;
+        margin: auto;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1149px) and (min-width: 1100px) {
+    .staking-detail-container {
+        display: flex;
+        justify-content: space-between;
+        width: 66%;
+        margin: auto;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1099px) and (min-width: 1050px) {
+    .staking-detail-container {
+        display: flex;
+        justify-content: space-between;
+        width: 69%;
+        margin: auto;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1049px) and (min-width: 900px) {
+    .staking-detail-container {
+        display: flex;
+        justify-content: space-between;
+        width: 74%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .close-staking-detail {
+        display: flex;
+        justify-content: space-between;
+        width: 85.6%;
+        margin-top: 40px;
+    }
+    #staking-detail-text {
+        font-size: 46px;
+        font-weight: 700;
+        letter-spacing: 2%;
+        text-align: center;
+        color: #CF00CA;
+    }
+    /* .right-detail-container {
+        margin-left: 5%;
+    } */
+    .detail-description {
+        width: 92%;
+        height: 40%;
+        background: #0F121E;
+        border: 1px solid #F901F3;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+    .detail-description-unstake {
+        width: 92%;
+        height: 46%;
+        background: #0F121E;
+        border: 1px solid #F901F3;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 899px) and (min-width: 734px) {
+    .staking-detail-container {
+        display: flex;
+        justify-content: space-between;
+        width: 74%;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .close-staking-detail {
+        display: flex;
+        justify-content: space-between;
+        width: 85.6%;
+        margin-top: 40px;
+    }
+    #staking-detail-text {
+        font-size: 46px;
+        font-weight: 700;
+        letter-spacing: 2%;
+        text-align: center;
+        color: #CF00CA;
+    }
+    .right-detail-container {
+        margin-left: 5%;
+    }
+    .detail-description {
+        width: 85%;
+        height: 40%;
+        background: #0F121E;
+        border: 1px solid #F901F3;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+    .detail-description-unstake {
+        width: 92%;
+        height: 46%;
+        background: #0F121E;
+        border: 1px solid #F901F3;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+    .divider {
+        width: 90%;
+    }
+    #title-description-detail {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2%;
+        color: #05F5B4;
+        padding-top: 20px;
+    }
+    
+    #sub-title-description-detail {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2%;
+        color: white;
+        padding-top: 5px;
+    }
+    
+    #text-description-detail {
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        padding-top: 10px;
+    }
+    #stake-btn-title {
+        font-size: 14px;
+    }
+    .stake-btn {
+        height: 25px;
+    }
+    .nft-boost-detail {
+        width: 90%;
+    }
+    .owner-info {
+        width: 90%;
+    }
+    .border-logo-owner {
+        width: 141px;
+    }
+    .owner-img {
+        width: 141px;
+        margin-left: -25px;
+    }
+    #logo-owner-info {
+        width: 170px;
+    }
+    #ggg-owner {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 2%;
+        color: white;
+        padding-left: 10px;
+    }
+    
+    #link-ggg {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 733px) and (min-width: 300px) {
+    .staking-detail {
+        height: 230vh;
+        background: black;
+    }
+    .wrapper-detail {
+        height: 224vh;
+        background-image: url('../../../assets//bg-2.png');
+        background-size: cover;
+    }
+    .staking-detail-container {
+        display: flex;
+        width: 40%;
+        margin: auto;
+        margin-top: 80px;
+        flex-wrap: wrap;
+    }
+    .wrapper-detail-description {
+        height: 42vh;
+    }
+    .close-staking-detail {
+        display: flex;
+        justify-content: space-between;
+        width: 85.6%;
+        margin-top: 40px;
+    }
+    #staking-detail-text {
+        font-size: 42px;
+        font-weight: 700;
+        letter-spacing: 2%;
+        text-align: center;
+        color: #CF00CA;
+    }
+    .right-detail-container {
+        margin-top: 20px;
+    }
+    .detail-description {
+        width: 85%;
+        height: 40%;
+        background: #0F121E;
+        border: 1px solid #F901F3;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+    .detail-description-unstake {
+        width: 92%;
+        height: 46%;
+        background: #0F121E;
+        border: 1px solid #F901F3;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+    .divider {
+        width: 90%;
+    }
+    #title-description-detail {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2%;
+        color: #05F5B4;
+        padding-top: 20px;
+    }
+    
+    #sub-title-description-detail {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2%;
+        color: white;
+        padding-top: 5px;
+    }
+    
+    #text-description-detail {
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        padding-top: 10px;
+    }
+    #stake-btn-title {
+        font-size: 14px;
+    }
+    .stake-btn {
+        height: 25px;
+    }
+    .nft-boost-detail {
+        width: 90%;
+    }
+    .owner-info {
+        width: 90%;
+    }
+    .border-logo-owner {
+        width: 141px;
+    }
+    .owner-img {
+        width: 141px;
+        margin-left: -25px;
+    }
+    #logo-owner-info {
+        width: 170px;
+    }
+    #ggg-owner {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 2%;
+        color: white;
+        padding-left: 10px;
+    }
+    
+    #link-ggg {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
 }

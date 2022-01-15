@@ -1,6 +1,7 @@
 .navbar {
     background: black;
     height: 10vh;
+    z-index: 2;
 }
 
 .nav-wrapper {
@@ -16,13 +17,19 @@
 
 .right-side {
     width: 70%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .right-side-content {
     display: flex;
     justify-content: space-between;
+}
+
+.common-nav {
+    display: flex;
+    justify-content: space-between;
     cursor: pointer;
+    width: 50%;
 }
 
 #menu-nav {
@@ -43,7 +50,7 @@
 }
 
 .green-btn {
-    width: 150px;
+    width: 22%;
     height: 40px;
     background: #05F5B4;
     border-radius: 5px;
@@ -60,8 +67,513 @@
 }
 
 .purple-btn {
-    width: 191px;
+    width: 25%;
     height: 40px;
     background: #F901F3;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 961px) {
+    .navbar {
+        background: black;
+        height: 10vh;
+    }
+    
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .left-side {
+        width: 10%;
+    }
+    
+    .right-side {
+        width: 75%;
+        margin-top: 20px;
+    }
+    
+    .right-side-content {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    
+    #menu-nav {
+        font-size: 14px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        padding-top: 10px;
+    }
+    #menu-nav-active {
+        font-size: 14px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: #F901F3;
+        padding-top: 10px;
+    }
+    
+    .green-btn {
+        width: 18%;
+        height: 40px;
+        background: #05F5B4;
+        border-radius: 5px;
+    }
+    
+    #launchpad, #ggl {
+        color: black;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 9px;
+        letter-spacing: 2%;
+    }
+    
+    .purple-btn {
+        width: 23%;
+        height: 40px;
+        background: #F901F3;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 965px) and (min-width: 768px) {
+    .navbar {
+        background: black;
+        height: 10vh;
+    }
+    
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .left-side {
+        width: 10%;
+    }
+    
+    .right-side {
+        width: 75%;
+        margin-top: 30px;
+    }
+    
+    .right-side-content {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    
+    #menu-nav {
+        font-size: 11px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        padding-top: 10px;
+    }
+    #menu-nav-active {
+        font-size: 11px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: #F901F3;
+        padding-top: 10px;
+    }
+    
+    .green-btn {
+        width: 16%;
+        height: 30px;
+        background: #05F5B4;
+        border-radius: 5px;
+        margin-top: 3px;
+    }
+    
+    #launchpad, #ggl {
+        color: black;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 9px;
+        letter-spacing: 2%;
+    }
+    
+    .purple-btn {
+        width: 24%;
+        height: 30px;
+        background: #F901F3;
+        border-radius: 5px;
+        margin-top: 3px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 658px) {
+    .navbar {
+        background: black;
+        height: 10vh;
+    }
+    
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    .burger-nav {
+        display: none;
+    }
+    
+    .left-side {
+        width: 10%;
+        margin-top: -5px;
+    }
+    
+    .right-side {
+        width: 55%;
+        margin-top: 20px;
+    }
+    
+    .right-side-content {
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+    
+    #menu-nav {
+        font-size: 14px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        padding-top: 10px;
+    }
+    #menu-nav-active {
+        font-size: 14px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: #F901F3;
+        padding-top: 10px;
+    }
+    
+    .green-btn {
+        width: 24%;
+        height: 40px;
+        background: #05F5B4;
+        border-radius: 5px;
+    }
+    
+    #launchpad, #ggl {
+        color: black;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 10px;
+        letter-spacing: 2%;
+    }
+    
+    .purple-btn {
+        width: 36%;
+        height: 40px;
+        background: #F901F3;
+        border-radius: 5px;
+    }
+
+    .burger-menu {
+        background: white;
+        width: 40px;
+        height: 40px;
+    }
+
+    .side-menu-active {
+        width: 90%;
+        height: 40px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        z-index: 4;
+        margin: auto    ;
+    }
+}
+
+@media screen and (max-width: 657px) and (min-width: 520px) {
+    .navbar {
+        background: black;
+        height: 10vh;
+    }
+    
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    .burger-nav {
+        display: none;
+    }
+    
+    .left-side {
+        width: 10%;
+        margin-top: -5px;
+    }
+    
+    .right-side {
+        width: 70%;
+        margin-top: 20px;
+    }
+    
+    .right-side-content {
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+    
+    #menu-nav {
+        font-size: 14px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        padding-top: 10px;
+    }
+    #menu-nav-active {
+        font-size: 14px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: #F901F3;
+        padding-top: 10px;
+    }
+    
+    .green-btn {
+        width: 24%;
+        height: 40px;
+        background: #05F5B4;
+        border-radius: 5px;
+    }
+    
+    #launchpad, #ggl {
+        color: black;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 10px;
+        letter-spacing: 2%;
+    }
+    
+    .purple-btn {
+        width: 36%;
+        height: 40px;
+        background: #F901F3;
+        border-radius: 5px;
+    }
+
+    .burger-menu {
+        background: white;
+        width: 40px;
+        height: 40px;
+    }
+
+    .side-menu-active {
+        width: 90%;
+        height: 40px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        z-index: 4;
+        margin: auto    ;
+    }
+}
+@media screen and (max-width: 519px) and (min-width: 420px) {
+    .navbar {
+        background: black;
+        height: 10vh;
+    }
+    
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    .burger-nav {
+        display: none;
+    }
+    
+    .left-side {
+        width: 10%;
+        margin-top: -5px;
+    }
+    
+    .right-side {
+        width: 70%;
+        margin-top: 20px;
+    }
+    
+    .right-side-content {
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+    
+    #menu-nav {
+        font-size: 10px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        padding-top: 10px;
+    }
+    #menu-nav-active {
+        font-size: 10px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: #F901F3;
+        padding-top: 10px;
+    }
+    
+    .green-btn {
+        width: 24%;
+        height: 35px;
+        background: #05F5B4;
+        border-radius: 5px;
+    }
+    
+    #launchpad, #ggl {
+        color: black;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 10px;
+        letter-spacing: 2%;
+    }
+    
+    .purple-btn {
+        width: 36%;
+        height: 35px;
+        background: #F901F3;
+        border-radius: 5px;
+    }
+
+    .burger-menu {
+        background: white;
+        width: 35px;
+        height: 35px;
+    }
+
+    .side-menu-active {
+        width: 90%;
+        height: 40px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        z-index: 4;
+        margin: auto    ;
+    }
+}
+
+@media screen and (max-width: 419px) and (min-width: 300px) {
+    .navbar {
+        background: black;
+        height: 10vh;
+    }
+    
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    .burger-nav {
+        display: none;
+    }
+    
+    .left-side {
+        width: 10%;
+        margin-top: -5px;
+    }
+    
+    .right-side {
+        width: 70%;
+        margin-top: 20px;
+    }
+    
+    .right-side-content {
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+    
+    #menu-nav {
+        font-size: 9px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        padding-top: 10px;
+    }
+    #menu-nav-active {
+        font-size: 9px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: #F901F3;
+        padding-top: 10px;
+    }
+    
+    .green-btn {
+        width: 27%;
+        height: 35px;
+        background: #05F5B4;
+        border-radius: 5px;
+    }
+    
+    #launchpad, #ggl {
+        color: black;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 10px;
+        letter-spacing: 2%;
+    }
+    
+    .purple-btn {
+        width: 42%;
+        height: 35px;
+        background: #F901F3;
+        border-radius: 5px;
+    }
+
+    .burger-menu {
+        background: white;
+        width: 35px;
+        height: 35px;
+    }
+
+    .side-menu-active {
+        width: 90%;
+        height: 40px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        z-index: 4;
+        margin: auto    ;
+    }
 }
