@@ -1,12 +1,33 @@
 import React, {useReducer} from 'react';
-import useWindowDimensions from '../../hooks/useDimension.js';
 import { Typography } from '@material-ui/core';
 import GggLogo from '../../../assets/ggg.png';
 import "./navbar.css";
 
+const hasWindow = typeof window !== 'undefined';
+function getWindowDimensions() {
+    const width = hasWindow ? window.innerWidth : null;
+    const height = hasWindow ? window.innerHeight : null;
+    return {
+        width,
+        height,
+    };
+}
 export default function Navbar() {
-    const { height, width } = useWindowDimensions();
-    console.log(height, width);
+
+
+    const [, setWindowDimensions] = React.useState(getWindowDimensions());
+
+    React.useEffect(() => {
+        if (hasWindow) {
+            function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }
+    }, []);
+    const { width } = getWindowDimensions();
     const [, forceUpdate] = useReducer(x => x + 1, 0);
     const [sideMenu, setSideMenu] = React.useState(false);
     const [menuNav, ] = React.useState([
