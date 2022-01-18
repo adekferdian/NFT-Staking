@@ -233,7 +233,14 @@
     font-weight: 700;
     letter-spacing: 2%;
     color: #F901F3;
-    padding-top: 85px;
+    padding-top: 55px;
+}
+
+#reward-staked-title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: #F901F3;
 }
 
 .nft-boost-detail {
@@ -241,17 +248,36 @@
     justify-content: space-between;
 }
 
-#staking-boost, #additional-pool {
+#staking-boost, #additional-pool, #reward-amount-text, #staked-tokens-title, #total-staked-title{
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 2%;
     color: white;
 }
 
-#value-staking-boost, #value-additional-pool {
+#value-staking-boost, #value-additional-pool{
     color: #05F5B4;
+    font-size: 12px;
 }
 
+#reward-amount-val, #staked-tokens-val, #total-staked-val {
+    color: #05F5B4;
+    font-size: 12px;
+    padding-left: .5em;
+}
+
+.reward-amount, .staked-tokens, .total-staked {
+    display: flex;
+}
+
+.reward-staked-info {
+    margin-top: 20px;
+}
+
+.reward-flex {
+    display: flex;
+    justify-content: space-between;
+}
 
 .owner-info {
     margin-top: 28px;

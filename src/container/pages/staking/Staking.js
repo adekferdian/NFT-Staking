@@ -14,7 +14,7 @@ export default function Staking() {
     const [visibleAlert, setVisibleAlert] = React.useState(false);
     const [sentProduct, setSentProduct] = React.useState(false);
     const [selectedNft, setSelectedNft] = React.useState([]);
-    const [alertLength, setAlertLength] = React.useState(false)
+    const [alertLength, setAlertLength] = React.useState(false);
     const [products, ] = React.useState([
         {
             img: Product1,

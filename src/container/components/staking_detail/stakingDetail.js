@@ -229,6 +229,26 @@ export default function StakingDetail(props) {
                             <Typography id="staking-boost">Staking Boost: <span id="value-staking-boost">10%</span></Typography>
                             <Typography id="additional-pool">Additional Pool Weight: <span id="value-additional-pool">10%</span></Typography>
                         </div>
+                        <div className="reward-staked-info">
+                            <Typography id="reward-staked-title">Reward & Staked</Typography>
+                            <img src={Line} alt="" className="divider" />
+                            <div className="reward-flex">
+                                <div>
+                                    <div className="reward-amount">
+                                        <Typography id="reward-amount-text">Reward Amount :</Typography>
+                                        <Typography id="reward-amount-val">12,445.1</Typography>
+                                    </div>
+                                    <div className="staked-tokens">
+                                        <Typography id="staked-tokens-title">Staked Tokens :</Typography>
+                                        <Typography id="staked-tokens-val">4</Typography>
+                                    </div>
+                                </div>
+                                <div className="total-staked">
+                                    <Typography id="total-staked-title">Total Staked :</Typography>
+                                    <Typography id="total-staked-val">12</Typography>
+                                </div>
+                            </div>
+                        </div>
                         <div className="owner-info">
                             <div className="border-logo-owner">
                                 <div className="owner-img">
