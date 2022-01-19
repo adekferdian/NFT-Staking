@@ -1,8 +1,8 @@
 .nft-modal {
-    height: 100vh;
+    height: 220vh;
     width: 100%;
     position: absolute;
-    background: rgba(0, 0, 0, 0.44);;
+    background: rgba(0, 0, 0, 0.44);
 }
 
 .header-section-modal {
@@ -36,20 +36,20 @@
 }
 
 .nft-modal-container {
-    width: 50%;
-    height: 400px;
+    width: 60%;
+    height: 90vh;
     margin: auto;
     margin-top: 100px;
     background: black;
     border: 1px solid #05F5B4;
     box-sizing: border-box;
     border-radius: 10px;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .nft-products-wrapeer {
-    height: 200px;
-    /* overflow: auto; */
+    height: 400px;
+    overflow: auto;
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -58,12 +58,13 @@
 }
 
 .nft-contents{
+    margin-top: 20px;
     position: relative;
     border: 1px solid #F901F3;
+    height: 350px;
 }
 
 .checkbox {
-    /* background: white; */
     width: 40px;
     height: 40px;
     position: absolute;
@@ -76,8 +77,8 @@
 }
 
 .nft-content-logo {
-    width: 140px;
-    height: 160px;
+    width: 14rem;
+    height: 300px;
 }
 
 .checked {
@@ -103,9 +104,10 @@
 .nft-time-duration {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 90%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .nft-submit-btn {
@@ -132,6 +134,7 @@
     background: #05F5B4;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .nft-duration-times {
@@ -140,4 +143,97 @@
     background: #C4C4C4;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 503px) and (min-width: 336px) {
+    .nft-modal-container {
+        width: 60%;
+        height: 95vh;
+        margin: auto;
+        margin-top: 100px;
+        background: black;
+        border: 1px solid #05F5B4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        /* overflow: auto; */
+    }
+}
+
+@media screen and (max-width: 442px) and (min-width: 200px) {
+    .nft-modal-container {
+        width: 60%;
+        height: 95vh;
+        margin: auto;
+        margin-top: 100px;
+        background: black;
+        border: 1px solid #05F5B4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        /* overflow: auto; */
+    }
+    .nft-content-logo {
+        width: 10rem;
+        height: 200px;
+    }
+    .nft-contents{
+        margin-top: 20px;
+        position: relative;
+        border: 1px solid #F901F3;
+        height: 250px;
+    }
+    .nft-submit-btn {
+        width: 180px;
+        height: 50px;
+        background: #05F5B4;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 335px) and (min-width: 200px) {
+    .nft-modal-container {
+        width: 60%;
+        height: 100vh;
+        margin: auto;
+        margin-top: 100px;
+        background: black;
+        border: 1px solid #05F5B4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        /* overflow: auto; */
+    }
+    .nft-content-logo {
+        width: 8rem;
+        height: 180px;
+    }
+    .nft-contents{
+        margin-top: 20px;
+        position: relative;
+        border: 1px solid #F901F3;
+        height: 230px;
+    }
+    .nft-submit-btn {
+        width: 160px;
+        height: 50px;
+        background: #05F5B4;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    #nft-modal-title {
+        color: white;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 2%;
+        width: 90%;
+        margin: auto;
+    }
+    .header-section-modal {
+        width: 100%;
+    }
 }

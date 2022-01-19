@@ -7,8 +7,20 @@ import Close from '../../../assets/Close.png';
 import NftModal from '../nfts_modal/nftModal';
 import './stakingDetail.css';
 
+const hasWindow = typeof window !== 'undefined';
+function getWindowDimensions() {
+    const width = hasWindow ? window.innerWidth : null;
+    const height = hasWindow ? window.innerHeight : null;
+    return {
+        width,
+        height,
+    };
+}
+
 export default function StakingDetail(props) {
-    console.log(props);
+    const [, setWindowDimensions] = React.useState(getWindowDimensions());
+    const { width } = getWindowDimensions();
+    console.log(width);
     const { img, stake } = props.sentProduct;
     const [visibleTime, setVisibleTime] = React.useState(false);
     const [alertSubmit, setAlertSubmit] = React.useState("");
@@ -26,6 +38,16 @@ export default function StakingDetail(props) {
             title: "90 Days"
         },
     ];
+    React.useEffect(() => {
+        if (hasWindow) {
+            function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }
+    }, []);
     const handleClose = () => {
         props.handleCloseDetail(false)
     };
@@ -202,23 +224,7 @@ export default function StakingDetail(props) {
                                                 <div className="button-unstake" onClick={() => setVisibleNftUnstake(true)}>
                                                     <Typography id="unstake-title-btn">Unstake</Typography>
                                                 </div>
-                                                {/* <div className="border-button-unstake">
-                                                    <div className="wrapper-close-logo-unstake">
-                                                        <img src={Close} alt="" className="close-button-unstake" />
-                                                    </div>
-                                                </div> */}
                                             </div>
-                                            {/* <div className="unstake-duration">
-                                                {
-                                                    unstakeDuration.map((el, idx) => {
-                                                        return (
-                                                            <div className="duration-times" key={idx}>
-                                                                <Typography id="duration-time-title">{el.title}</Typography>
-                                                            </div>
-                                                        )
-                                                    })
-                                                }
-                                            </div> */}
                                         </div>
                                 }
                             </div>

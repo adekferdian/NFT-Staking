@@ -487,7 +487,7 @@
     }
 }
 
-@media screen and (max-width: 419px) and (min-width: 300px) {
+@media screen and (max-width: 419px) and (min-width: 370px) {
     .navbar {
         background: black;
         height: 10vh;
@@ -551,6 +551,103 @@
         font-weight: 700;
         text-align: center;
         padding-top: 10px;
+        letter-spacing: 2%;
+    }
+    
+    .purple-btn {
+        width: 42%;
+        height: 35px;
+        background: #F901F3;
+        border-radius: 5px;
+    }
+
+    .burger-menu {
+        background: white;
+        width: 35px;
+        height: 35px;
+    }
+
+    .side-menu-active {
+        width: 90%;
+        height: 40px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        z-index: 4;
+        margin: auto    ;
+    }
+}
+
+@media screen and (max-width: 369px) and (min-width: 200px) {
+    .navbar {
+        background: black;
+        height: 10vh;
+    }
+    
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    .burger-nav {
+        display: none;
+    }
+    
+    .left-side {
+        width: 10%;
+        margin-top: -5px;
+    }
+    
+    .right-side {
+        width: 70%;
+        margin-top: 20px;
+    }
+    
+    .right-side-content {
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+    
+    #menu-nav {
+        font-size: 7px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        padding-top: 10px;
+    }
+    #menu-nav-active {
+        font-size: 7px;
+        line-height: 18.75px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: #F901F3;
+        padding-top: 10px;
+    }
+
+    .ggg-logo {
+        width: 75px;
+        height: 75px;
+        margin-top: 10px;
+    }
+    
+    .green-btn {
+        width: 27%;
+        height: 35px;
+        background: #05F5B4;
+        border-radius: 5px;
+    }
+    
+    #launchpad, #ggl {
+        color: black;
+        text-transform: uppercase;
+        font-size: 8px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 12px;
         letter-spacing: 2%;
     }
     

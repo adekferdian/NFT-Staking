@@ -16,7 +16,6 @@ export default function Navbar() {
 
 
     const [, setWindowDimensions] = React.useState(getWindowDimensions());
-
     React.useEffect(() => {
         if (hasWindow) {
             function handleResize() {
@@ -92,11 +91,7 @@ export default function Navbar() {
                                     })
                                 }
                             </div>
-                            : 
-                            <div onClick={() => handleNav()}>
-                                <img className="burger-menu" src="https://img.icons8.com/ios-filled/50/000000/menu-squared-2.png" alt="" />
-                            </div>
-
+                            : null
                         }
                         <div className="green-btn">
                             <Typography id="launchpad">Launchpad</Typography>
@@ -104,6 +99,14 @@ export default function Navbar() {
                         <div className="purple-btn">
                             <Typography id="ggl">good game labs</Typography>
                         </div>
+                        {
+                            width < 769 ?
+
+                            <div onClick={() => handleNav()}>
+                                <img className="burger-menu" src="https://img.icons8.com/ios-filled/50/000000/menu-squared-2.png" alt="" />
+                            </div>
+                            :null
+                        }
                     </div>
                     {
                         sideMenu ?

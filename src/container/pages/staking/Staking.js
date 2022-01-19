@@ -23,6 +23,24 @@ export default function Staking() {
             checked: false
         },
         {
+            img: Product1,
+            stake: false,
+            name: "Circinus",
+            checked: false
+        },
+        {
+            img: Product1,
+            stake: false,
+            name: "Circinus",
+            checked: false
+        },
+        {
+            img: Product1,
+            stake: false,
+            name: "Circinus",
+            checked: false
+        },
+        {
             img: Product2,
             stake: true,
             name: "Andromeda",

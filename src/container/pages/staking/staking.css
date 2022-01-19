@@ -1131,7 +1131,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         height: 370px;
-        width: 55%;
+        width: 56%;
         margin: auto;
         margin-top: 25px;
         overflow: auto;
@@ -1180,7 +1180,7 @@
     }
 }
 
-@media screen and (max-width: 399px) and (min-width: 300px) {
+@media screen and (max-width: 399px) and (min-width: 372px) {
     .staking {
         background: black;
         height: 140vh;
@@ -1232,7 +1232,7 @@
     }
     
     #metakey-title {
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 700;
         letter-spacing: 2%;
         text-align: center;
@@ -1242,7 +1242,7 @@
     
     #desc-1 {
         color: #CF00CA;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         letter-spacing: 2%;
         text-align: center;
@@ -1254,7 +1254,7 @@
         width: 69%;
         margin: auto;
         color: #CF00CA;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
         letter-spacing: 2%;
         text-align: center;
@@ -1264,7 +1264,7 @@
     #metakey-tag {
         width: 55%;
         margin: auto;
-        font-size: 12.5px;
+        font-size: 11.5px;
         font-weight: 400;
         letter-spacing: 2%;
         color: white;
@@ -1277,7 +1277,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         height: 370px;
-        width: 57%;
+        width: 60%;
         margin: auto;
         margin-top: 25px;
         overflow: auto;
@@ -1322,6 +1322,348 @@
     .wallet-btn-staking {
         margin: auto;
         width: 56%;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 371px) and (min-width: 320px) {
+    .staking {
+        background: black;
+        height: 140vh;
+        width: 100%;
+        position: absolute;
+        top: 10;
+        z-index: 1;
+    }
+    .container {
+        background-image: url('../../../assets//bg-2.png');
+        height: 140vh;
+        top: 0;
+        opacity: .5;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .alert-status-default {
+        position: absolute;
+        right: 8.6em;
+        top: 10px;
+        width: 30%;
+        height: 40px;
+        background: black;
+        border: 1px solid #F901F3;
+    }
+    .alert-status {
+        position: absolute;
+        right: 8.6em;
+        top: 10px;
+        width: 30%;
+        height: 60px;
+        background: black;
+        border: 1px solid #F901F3;
+    }
+    
+    #title-alert {
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .staking-content {
+        position: relative;
+        z-index: 2;
+    }
+    
+    #metakey-title {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 2%;
+        text-align: center;
+        color: #CF00CA;
+        padding-top: 80px;
+    }
+    
+    #desc-1 {
+        color: #CF00CA;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        text-align: center;
+        padding-top: 40px;
+        width: 70%;
+        margin: auto;
+    }
+    #desc-2 {
+        width: 69%;
+        margin: auto;
+        color: #CF00CA;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    #metakey-tag {
+        width: 55%;
+        margin: auto;
+        font-size: 11.5px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .products-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 370px;
+        width: 70%;
+        margin: auto;
+        margin-top: 25px;
+        overflow: auto;
+    }
+    
+    .products {
+        margin-bottom: 25px;
+    }
+    
+    .wallet-btn-staking {
+        margin: auto;
+        width: 68%;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 319px) and (min-width: 298px) {
+    .staking {
+        background: black;
+        height: 140vh;
+        width: 100%;
+        position: absolute;
+        top: 10;
+        z-index: 1;
+    }
+    .container {
+        background-image: url('../../../assets//bg-2.png');
+        height: 140vh;
+        top: 0;
+        opacity: .5;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .alert-status-default {
+        position: absolute;
+        right: 8.6em;
+        top: 10px;
+        width: 30%;
+        height: 40px;
+        background: black;
+        border: 1px solid #F901F3;
+    }
+    .alert-status {
+        position: absolute;
+        right: 8.6em;
+        top: 10px;
+        width: 30%;
+        height: 60px;
+        background: black;
+        border: 1px solid #F901F3;
+    }
+    
+    #title-alert {
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .staking-content {
+        position: relative;
+        z-index: 2;
+    }
+    
+    #metakey-title {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 2%;
+        text-align: center;
+        color: #CF00CA;
+        padding-top: 80px;
+    }
+    
+    #desc-1 {
+        color: #CF00CA;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        text-align: center;
+        padding-top: 40px;
+        width: 70%;
+        margin: auto;
+    }
+    #desc-2 {
+        width: 69%;
+        margin: auto;
+        color: #CF00CA;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    #metakey-tag {
+        width: 55%;
+        margin: auto;
+        font-size: 11.5px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .products-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 370px;
+        width: 75%;
+        margin: auto;
+        margin-top: 25px;
+        overflow: auto;
+    }
+    
+    .products {
+        margin-bottom: 25px;
+    }
+    
+    .wallet-btn-staking {
+        margin: auto;
+        width: 73%;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 297px) and (min-width: 200px) {
+    .staking {
+        background: black;
+        height: 140vh;
+        width: 100%;
+        position: absolute;
+        top: 10;
+        z-index: 1;
+    }
+    .container {
+        background-image: url('../../../assets//bg-2.png');
+        height: 140vh;
+        top: 0;
+        opacity: .5;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .alert-status-default {
+        position: absolute;
+        right: 8.6em;
+        top: 10px;
+        width: 30%;
+        height: 40px;
+        background: black;
+        border: 1px solid #F901F3;
+    }
+    .alert-status {
+        position: absolute;
+        right: 8.6em;
+        top: 10px;
+        width: 30%;
+        height: 60px;
+        background: black;
+        border: 1px solid #F901F3;
+    }
+    
+    #title-alert {
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .staking-content {
+        position: relative;
+        z-index: 2;
+    }
+    
+    #metakey-title {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 2%;
+        text-align: center;
+        color: #CF00CA;
+        padding-top: 80px;
+    }
+    
+    #desc-1 {
+        color: #CF00CA;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        text-align: center;
+        padding-top: 40px;
+        width: 70%;
+        margin: auto;
+    }
+    #desc-2 {
+        width: 69%;
+        margin: auto;
+        color: #CF00CA;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    #metakey-tag {
+        width: 55%;
+        margin: auto;
+        font-size: 11.5px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .products-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 370px;
+        width: 82%;
+        margin: auto;
+        margin-top: 25px;
+        overflow: auto;
+    }
+    
+    .products {
+        margin-bottom: 25px;
+    }
+    
+    .wallet-btn-staking {
+        margin: auto;
+        width: 82%;
         margin-top: 40px;
     }
 }
