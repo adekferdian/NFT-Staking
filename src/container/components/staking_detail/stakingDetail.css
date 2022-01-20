@@ -484,7 +484,7 @@
         margin-top: 75px;
     }
     .wrapper-detail {
-        height: 85vh;
+        height: auto;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -492,7 +492,7 @@
         z-index: 4;
     }
     .staking-detail {
-        height: 90vh;
+        height: auto;
     }
 }
 
@@ -502,10 +502,10 @@
         justify-content: space-between;
         width: 55%;
         margin: auto;
-        margin-top: 80px;
+        margin-top: 40px;
     }
     .wrapper-detail {
-        height: 92vh;
+        height: auto;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -513,7 +513,8 @@
         z-index: 4;
     }
     .staking-detail {
-        height: 97vh;
+        height: auto;
+        /* background: red; */
     }
 }
 
@@ -526,10 +527,10 @@
         margin-top: 80px;
     }
     .staking-detail {
-        height: 105vh;
+        height: auto;
     }
     .wrapper-detail {
-        height: 100vh;
+        height: 105vh;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -550,7 +551,7 @@
         height: 111vh;
     }
     .wrapper-detail {
-        height: 105vh;
+        height: 110vh;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -589,10 +590,10 @@
         margin-top: 80px;
     }
     .staking-detail {
-        height: 120vh;
+        height: auto;
     }
     .wrapper-detail {
-        height: 114vh;
+        height: 120vh;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -610,10 +611,10 @@
         margin-top: 80px;
     }
     .staking-detail {
-        height: 126vh;
+        height: auto;
     }
     .wrapper-detail {
-        height: 120vh;
+        height: 122vh;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -652,10 +653,10 @@
         margin-top: 80px;
     }
     .staking-detail {
-        height: 130vh;
+        height: auto;
     }
     .wrapper-detail {
-        height: 124vh;
+        height: 122vh;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -673,10 +674,10 @@
         margin-top: 80px;
     }
     .staking-detail {
-        height: 135vh;
+        height: auto;
     }
     .wrapper-detail {
-        height: 130vh;
+        height: 124vh;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -694,7 +695,7 @@
         margin-top: 80px;
     }
     .staking-detail {
-        height: 135vh;
+        height: auto;
     }
     .wrapper-detail {
         height: 128vh;
@@ -863,11 +864,17 @@
         padding-top: 10px;
         padding-left: 10px;
     }
+    .wrapper-detail {
+        height: 130vh;
+        background-image: url('../../../assets//bg-2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 @media screen and (max-width: 733px) and (min-width: 530px) {
     .staking-detail {
-        height: 230vh;
+        height: auto;
         background: black;
     }
     .wrapper-detail {
@@ -899,20 +906,26 @@
         text-align: center;
         color: #CF00CA;
     }
+    .left-detail-container {
+        margin: auto;
+        width: 100%;
+    }
     .right-detail-container {
+        margin: auto;
         margin-top: 20px;
+        width: 100%;
     }
     .detail-description {
-        width: 85%;
-        height: 40%;
+        width: 270px;
+        height: auto;
         background: #0F121E;
         border: 1px solid #F901F3;
         box-sizing: border-box;
         border-radius: 15px;
     }
     .detail-description-unstake {
-        width: 92%;
-        height: 46%;
+        width: 270px;
+        height: auto;
         background: #0F121E;
         border: 1px solid #F901F3;
         box-sizing: border-box;
@@ -1002,6 +1015,7 @@
         margin: auto;
         margin-top: 80px;
         flex-wrap: wrap;
+        margin: auto;
     }
     .wrapper-detail-description {
         height: 42vh;
@@ -1019,20 +1033,26 @@
         text-align: center;
         color: #CF00CA;
     }
+    .left-detail-container {
+        margin: auto;
+        width: 70%;
+    }
     .right-detail-container {
+        width: 70%;
+        margin: auto;
         margin-top: 20px;
     }
     .detail-description {
-        width: 85%;
-        height: 38%;
+        width: 270px;
+        height: auto;
         background: #0F121E;
         border: 1px solid #F901F3;
         box-sizing: border-box;
         border-radius: 15px;
     }
     .detail-description-unstake {
-        width: 92%;
-        height: 38%;
+        width: 270px;
+        height: auto;
         background: #0F121E;
         border: 1px solid #F901F3;
         box-sizing: border-box;
@@ -1144,21 +1164,27 @@
         text-align: center;
         color: #CF00CA;
     }
+    .left-detail-container {
+        width: 100%;
+        margin: auto;
+    }
     .right-detail-container {
+        width: 100%;
+        margin: auto;
         margin-top: 20px;
         /* width: 100%; */
     }
     .detail-description {
-        width: 108%;
-        height: 35%;
+        width: 265px;
+        height: auto;
         background: #0F121E;
         border: 1px solid #F901F3;
         box-sizing: border-box;
         border-radius: 15px;
     }
     .detail-description-unstake {
-        width: 108%;
-        height: 35%;
+        width: 265px;
+        height: auto;
         background: #0F121E;
         border: 1px solid #F901F3;
         box-sizing: border-box;

@@ -1,14 +1,14 @@
 .pop-up {
     background: rgba(0, 0, 0, 0.44);;
-    height: 100vh;
-    width: 100vw;
+    height: 110vh;
+    width: 100%;
     position: absolute;
     top: 0;
 }
 
 .pop-up-content {
-    width: 650px;
-    height: 694px;
+    width: 50%;
+    height: auto;
     background: #000000;
     border: 1px solid #05F5B4;
     box-sizing: border-box;
@@ -21,14 +21,27 @@
     height: 10px;
 }
 
+.header-box-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.close-wallet-modal {
+    display: flex;
+    cursor: pointer;
+}
+
 #wallet-connect {
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 2%;
     text-align: center;
-    color: #05F5B4;
+    color: white;
     text-transform: uppercase;
-    padding-top: 65px;
+    /* padding-top: 65px; */
 }
 
 .border-box-wallet {
@@ -55,19 +68,23 @@
     letter-spacing: 2%;
     padding-top: 5px;
 }
+.divider-wallet {
+    width: 90%;;
+}
 
 .large-box {
-    width: 472px;
+    width: 80%;
     height: 400px;
     background: black;
     border-radius: 18px;
     /* border: 2px solid #F901F3; */
     margin: auto;
-    box-shadow:0px 0px 15px  #F901F3;
+    box-shadow:0px 0px 1px  #05F5B4;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .small-box {
-    width: 472px;
+    width: 80%;
     height: 266px;
     background: #000000;
     border-radius: 10px;
