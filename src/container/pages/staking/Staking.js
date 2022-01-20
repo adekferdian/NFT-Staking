@@ -107,10 +107,11 @@ export default function Staking() {
     };
     return (
         <div>
-            <div className="staking">
-                <div className="container">
+            <div className={visibleDetail === false ? "staking" : "staking-in-detail"}>
+                <div className={visibleDetail === false ? "container" : "container-in-detail"}>
                 </div>
             </div>
+            <div style={{height: '100%'}}>
             {
                 visibleDetail === false ?
                     <div className="staking-content">
@@ -162,6 +163,7 @@ export default function Staking() {
                         onSubmit={onSubmit}
                     />
             }
+            </div>
         </div>
     );
 };

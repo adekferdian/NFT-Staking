@@ -11,6 +11,7 @@ export default function NftModal(props) {
     const [alertError, setAlertError] = React.useState(false);
     const [alertErrorMessage, setAlertErrorMessage] = React.useState("");
     const [selectedNft, setSelectedNft] = React.useState(false);
+    const dataModal = [];
     const [unstakeDuration, ] = React.useState([
         {
             title: "30 Days",
@@ -102,13 +103,11 @@ export default function NftModal(props) {
                     <Typography id="error-input">{alertErrorMessage}</Typography>
                     :null
                 }
-                <div className="nft-products-wrapeer">
+                <div className="nft-products-wrapeer" style={{justifyContent: dataModal.length < 1 ? "space-around" : "space-between"}}>
                     {
                         products.map((el, idx) => {
                             if (el.stake === false && flag === "stake") {
-                                let dataLength = 0;
-                                dataLength ++;
-                                console.log(dataLength);
+                                dataModal.push(el);
                                 return (
                                     <div className="nft-contents" key={idx} onClick={() => {
                                         if (el.checked === false) {
@@ -134,9 +133,7 @@ export default function NftModal(props) {
                                     </div>
                                 )
                             } else if (el.stake === true && flag === "unstake") {
-                                let dataLength = 0;
-                                dataLength ++;
-                                console.log(dataLength);
+                                dataModal.push(el)
                                 return (
                                     <div className="nft-contents" key={idx} onClick={() => {
                                         if (el.checked === false) {

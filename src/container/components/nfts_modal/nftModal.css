@@ -1,5 +1,5 @@
 .nft-modal {
-    height: 220vh;
+    height: 100vh;
     width: 100%;
     position: absolute;
     background: rgba(0, 0, 0, 0.44);
@@ -39,7 +39,7 @@
     width: 60%;
     height: 90vh;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 20px;
     background: black;
     border: 1px solid #05F5B4;
     box-sizing: border-box;
@@ -144,6 +144,48 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 1900px) and (min-width: 1601px) {
+    .nft-modal-container {
+        width: 60%;
+        height: 55vh;
+        margin: auto;
+        margin-top: 20px;
+        background: black;
+        border: 1px solid #05F5B4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        /* overflow: auto; */
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1401px) {
+    .nft-modal-container {
+        width: 60%;
+        height: 65vh;
+        margin: auto;
+        margin-top: 20px;
+        background: black;
+        border: 1px solid #05F5B4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        /* overflow: auto; */
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1201px) {
+    .nft-modal-container {
+        width: 60%;
+        height: 75vh;
+        margin: auto;
+        margin-top: 20px;
+        background: black;
+        border: 1px solid #05F5B4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        /* overflow: auto; */
+    }
 }
 
 @media screen and (max-width: 503px) and (min-width: 336px) {
