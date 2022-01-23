@@ -1,6 +1,6 @@
 .navbar {
     background: black;
-    height: 10vh;
+    height: 9.5vh;
     z-index: 2;
 }
 
@@ -218,7 +218,7 @@
 @media screen and (max-width: 768px) and (min-width: 658px) {
     .navbar {
         background: black;
-        height: 10vh;
+        height: 9vh;
     }
     
     .nav-wrapper {
@@ -401,6 +401,12 @@
         background: black;
         height: 10vh;
     }
+
+    .ggg-logo {
+        margin-top: 2px;
+        width: 100px;
+        height: 90px;
+    }
     
     .nav-wrapper {
         display: flex;
@@ -492,6 +498,12 @@
         background: black;
         height: 10vh;
     }
+
+    .ggg-logo {
+        margin-top: 8px;
+        width: 90px;
+        height: 80px;
+    }
     
     .nav-wrapper {
         display: flex;
@@ -547,10 +559,10 @@
     #launchpad, #ggl {
         color: black;
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: 9px;
         font-weight: 700;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 12px;
         letter-spacing: 2%;
     }
     

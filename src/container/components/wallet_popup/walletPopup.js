@@ -39,12 +39,12 @@ export default function WalletPopup({ buttonWallet }) {
             <div className="pop-up-content">
                 <div className="box-container">
                     <div className="header-box-container">
-                        <Typography id="wallet-connect">Connect a Wallet</Typography>
+                        <Typography id="wallet-connect">Connect Wallet</Typography>
                         <div className="close-wallet-modal" onClick={() => buttonWallet(false)}>
-                            <div className="border-close">
-                                <img src={Close} alt="" className="logo-close" />
+                            <div className="border-close-wallet">
+                                <img src={Close} alt="" className="logo-close-wallet" />
                             </div>
-                            <Typography id="back">Close</Typography>
+                            <Typography id="back-wallet">Close</Typography>
                         </div>
                     </div>
                     <img src={Line} alt="" className="divider-wallet" />
@@ -63,12 +63,6 @@ export default function WalletPopup({ buttonWallet }) {
                                     )
                                 })
                             }
-                            {/* <div className="round">
-                                <img src={Ellipse} alt="" className="ellipse" />
-                            </div> */}
-                            {/* <div className="connect-pop-up">
-                                <Typography id="connect-pop-up-text">Connect</Typography>
-                            </div> */}
                         </div>
                     </div>
                 </div>
