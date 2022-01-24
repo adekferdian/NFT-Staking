@@ -93,7 +93,7 @@ export default function NftModal(props) {
                     <Typography id="nft-modal-title">{flag === "stake" ? "Stake" : "Unstake"}</Typography>
                     <div className="close-form-modal" onClick={() => handleClose()}>
                         <div className="border-close">
-                            <img src={Close} alt="" className="logo-close" />
+                            <img src={Close} alt="" className="logo-close-nft-modal" />
                         </div>
                         <Typography id="back">Close</Typography>
                     </div>

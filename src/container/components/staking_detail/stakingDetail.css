@@ -69,10 +69,10 @@
     box-sizing: border-box;
     border-radius: 15px;
     margin-top: 20px;
-    border-top-left-radius: 25px;
+    /* border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 20px; */
 }
 
 .header-info-container {
@@ -134,20 +134,20 @@
 .collection-info {
     width: 263px;
     height: 30px;
-    border: 1px solid #F901F3;
+    border: .1px solid #F901F3;
     box-sizing: border-box;
     border-radius: 15px;
     margin-top: 20px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    /* border-top-left-radius: 25px;
+    border-top-right-radius: 25px; */
 }
 
 .header-collection-info {
     height: 30px;
     background: #2C3350;
-    border: 1px solid #F901F3;
+    border: .1px solid #F901F3;
     box-sizing: border-box;
-    border-radius: 15px 15px 0px 0px;   
+    border-radius: 11px 11px 0px 0px;   
 }
 
 .flex-header-collection-info {
@@ -505,7 +505,7 @@
         margin-top: 40px;
     }
     .wrapper-detail {
-        height: 87vh;
+        height: 880px;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -530,7 +530,7 @@
         height: auto;
     }
     .wrapper-detail {
-        height: 105vh;
+        height: 880px;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -548,10 +548,10 @@
         margin-top: 80px;
     }
     .staking-detail {
-        height: 111vh;
+        height: auto;
     }
     .wrapper-detail {
-        height: 110vh;
+        height: 890px;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -878,14 +878,14 @@
         background: black;
     }
     .wrapper-detail {
-        height: 224vh;
+        height: 1600px;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
         background-repeat: no-repeat;
     }
     .staking-detail-container {
         display: flex;
-        width: 40%;
+        width: 44%;
         margin: auto;
         margin-top: 80px;
         flex-wrap: wrap;
@@ -980,6 +980,10 @@
     }
     .nft-boost-detail {
         width: 90%;
+        display: block;
+    }
+    .reward-flex {
+        display: block;
     }
     .owner-info {
         width: 90%;
@@ -1018,7 +1022,7 @@
         background: black;
     }
     .wrapper-detail {
-        height: 224vh;
+        height: 1600px;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
         background-repeat: no-repeat;
@@ -1119,7 +1123,8 @@
         height: 25px;
     }
     .nft-boost-detail {
-        width: 90%;
+        width: 100%;
+        display: block;
     }
     .owner-info {
         width: 90%;
@@ -1143,12 +1148,18 @@
     }
     
     #link-ggg {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         letter-spacing: 2%;
         color: white;
         padding-top: 10px;
         padding-left: 10px;
+    }
+    .description-company {
+        margin-top: 15px;
+    }
+    .reward-flex {
+        display: block;
     }
 }
 
@@ -1235,7 +1246,10 @@
         width: 90%;
     }
     .reward-staked-info {
-        width: 90%;
+        width: 100%;
+    }
+    .reward-flex {
+        display: block;
     }
     #title-description-detail {
         font-size: 14px;
@@ -1267,7 +1281,8 @@
         height: 25px;
     }
     .nft-boost-detail {
-        width: 90%;
+        width: 100%;
+        display: block;
     }
     .owner-info {
         width: 90%;
@@ -1291,12 +1306,15 @@
     }
     
     #link-ggg {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         letter-spacing: 2%;
         color: white;
         padding-top: 10px;
         padding-left: 10px;
+    }
+    .description-company {
+        margin-top: 15px;
     }
 }
 
@@ -1382,7 +1400,10 @@
         width: 90%;
     }
     .reward-staked-info {
-        width: 90%;
+        width: 100%;
+    }
+    .reward-flex {
+        display: block;
     }
     #title-description-detail {
         font-size: 14px;
@@ -1414,10 +1435,14 @@
         height: 25px;
     }
     .nft-boost-detail {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        display: block;
     }
     .owner-info {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
     }
     .border-logo-owner {
         width: 141px;
@@ -1427,7 +1452,7 @@
         margin-left: -25px;
     }
     #logo-owner-info {
-        width: 170px;
+        width: 165px;
     }
     #ggg-owner {
         font-size: 16px;
@@ -1438,7 +1463,7 @@
     }
     
     #link-ggg {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         letter-spacing: 2%;
         color: white;
@@ -1528,7 +1553,12 @@
         width: 90%;
     }
     .reward-staked-info {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .reward-flex {
+        display: block;
     }
     #title-description-detail {
         font-size: 14px;
@@ -1560,20 +1590,25 @@
         height: 25px;
     }
     .nft-boost-detail {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        display: block;
     }
     .owner-info {
-        width: 90%;
+        width: 100%;
     }
     .border-logo-owner {
-        width: 141px;
+        width: 121px;
+        height: 120px;
     }
     .owner-img {
-        width: 141px;
-        margin-left: -25px;
+        width: 121px;
+        /* margin-left: -25px; */
     }
     #logo-owner-info {
-        width: 170px;
+        width: 120px;
+        margin-left: 10px;
+        height: 120px;
     }
     #ggg-owner {
         font-size: 16px;
@@ -1582,9 +1617,11 @@
         color: white;
         padding-left: 10px;
     }
-    
+    .description-company {
+        margin-top: 20px;
+    }
     #link-ggg {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         letter-spacing: 2%;
         color: white;
@@ -1596,12 +1633,12 @@
 
 @media screen and (max-width: 417px) and (min-width: 400px) {
     .staking-detail {
-        height: 234vh;
+        height: auto;
         background: black;
         width: 100%;
     }
     .wrapper-detail {
-        height: 226vh;
+        height: 1430px;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -1677,7 +1714,13 @@
         width: 90%;
     }
     .reward-staked-info {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .reward-flex {
+        display: block;
     }
     #title-description-detail {
         font-size: 14px;
@@ -1709,20 +1752,27 @@
         height: 25px;
     }
     .nft-boost-detail {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
     }
     .owner-info {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        display: flex;
     }
     .border-logo-owner {
-        width: 141px;
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
     }
     .owner-img {
         width: 141px;
-        margin-left: -25px;
+        margin-left: -10px;
     }
     #logo-owner-info {
-        width: 170px;
+        width: 115px;
+        height: 100px;
     }
     #ggg-owner {
         font-size: 16px;
@@ -1740,26 +1790,22 @@
         padding-top: 10px;
         padding-left: 10px;
     }
-    .reward-staked-info {
-        width: 110%;
-    }
-    .owner-info {
-        width: 100%;
-        flex-wrap: wrap;
-    }
     .description-company {
         margin-top: 10px;
     }
+    #link-ggg {
+        font-size: 12px;
+    }
 }
 
-@media screen and (max-width: 399px) and (min-width: 380px) {
+@media screen and (max-width: 399px) and (min-width: 387px) {
     .staking-detail {
-        height: 234vh;
+        height: auto;
         background: black;
         width: 100%;
     }
     .wrapper-detail {
-        height: 226vh;
+        height: 1460px;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -1835,7 +1881,9 @@
         width: 90%;
     }
     .reward-staked-info {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
     }
     #title-description-detail {
         font-size: 14px;
@@ -1867,20 +1915,30 @@
         height: 25px;
     }
     .nft-boost-detail {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        display: block;
     }
     .owner-info {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .reward-flex {
+        display: block;
     }
     .border-logo-owner {
-        width: 141px;
+        width: 120px;
+        height: 120px;
     }
     .owner-img {
-        width: 141px;
-        margin-left: -25px;
+        width: 120px;
+        height: 120px;
     }
     #logo-owner-info {
-        width: 170px;
+        width: 120px;
+        height: 120px;
+        margin-left: 12px;
     }
     #ggg-owner {
         font-size: 16px;
@@ -1891,7 +1949,7 @@
     }
     
     #link-ggg {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         letter-spacing: 2%;
         color: white;
@@ -1901,23 +1959,19 @@
     .reward-staked-info {
         width: 110%;
     }
-    .owner-info {
-        width: 100%;
-        flex-wrap: wrap;
-    }
     .description-company {
         margin-top: 10px;
     }
 }
 
-@media screen and (max-width: 379px) and (min-width: 369px) {
+@media screen and (max-width: 386px) and (min-width: 367px) {
     .staking-detail {
-        height: 234vh;
+        height: auto;
         background: black;
         width: 100%;
     }
     .wrapper-detail {
-        height: 226vh;
+        height: 1460px;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -1925,7 +1979,7 @@
     }
     .staking-detail-container {
         display: flex;
-        width: 70%;
+        width: 72%;
         margin: auto;
         margin-top: 80px;
         flex-wrap: wrap;
@@ -1934,10 +1988,6 @@
     .wrapper-detail-description {
         height: 42vh;
         /* width: 130%; */
-    }
-    .border-close {
-        width: 36px;
-        height: 34px;
     }
     .close-staking-detail {
         display: flex;
@@ -1997,7 +2047,9 @@
         width: 90%;
     }
     .reward-staked-info {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
     }
     #title-description-detail {
         font-size: 14px;
@@ -2029,20 +2081,30 @@
         height: 25px;
     }
     .nft-boost-detail {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        display: block;
     }
     .owner-info {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .reward-flex {
+        display: block;
     }
     .border-logo-owner {
-        width: 141px;
+        width: 120px;
+        height: 120px;
     }
     .owner-img {
-        width: 141px;
-        margin-left: -25px;
+        width: 120px;
+        height: 120px;
     }
     #logo-owner-info {
-        width: 170px;
+        width: 120px;
+        height: 120px;
+        margin-left: 12px;
     }
     #ggg-owner {
         font-size: 16px;
@@ -2053,7 +2115,7 @@
     }
     
     #link-ggg {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         letter-spacing: 2%;
         color: white;
@@ -2063,18 +2125,16 @@
     .reward-staked-info {
         width: 110%;
     }
-    .owner-info {
-        width: 100%;
-        flex-wrap: wrap;
-    }
     .description-company {
         margin-top: 10px;
     }
 }
 
+
+
 @media screen and (max-width: 368px) and (min-width: 350px) {
     .staking-detail {
-        height: 234vh;
+        height: auto;
         background: black;
         width: 100%;
     }
@@ -2100,7 +2160,7 @@
         font-size: 16px;
     }
     .wrapper-detail {
-        height: 226vh;
+        height: 1450px;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -2155,7 +2215,12 @@
         width: 90%;
     }
     .reward-staked-info {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .reward-flex {
+        display: block;
     }
     #title-description-detail {
         font-size: 14px;
@@ -2187,23 +2252,31 @@
         height: 25px;
     }
     .nft-boost-detail {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        display: block;
     }
     .owner-info {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        margin-top: 20px;
     }
     .border-logo-owner {
-        width: 141px;
+        width: 120px;
+        height: 120px;
     }
     .owner-img {
-        width: 141px;
+        width: 120px;
         margin-left: -25px;
     }
     #logo-owner-info {
-        width: 170px;
+        width: 120px;
+        height: 120px;
+        margin-left: 12px;
     }
     #ggg-owner {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 700;
         letter-spacing: 2%;
         color: white;
@@ -2211,7 +2284,7 @@
     }
     
     #link-ggg {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         letter-spacing: 2%;
         color: white;
@@ -2221,23 +2294,19 @@
     .reward-staked-info {
         width: 110%;
     }
-    .owner-info {
-        width: 100%;
-        flex-wrap: wrap;
-    }
     .description-company {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 }
 
-@media screen and (max-width: 349px) and (min-width: 200px) {
+@media screen and (max-width: 349px) and (min-width: 305px) {
     .staking-detail {
-        height: 234vh;
+        height: auto;
         background: black;
         width: 100%;
     }
     .wrapper-detail {
-        height: 226vh;
+        height: 1490px;
         width: 100%;
         background-image: url('../../../assets//bg-2.png');
         background-size: cover;
@@ -2258,7 +2327,7 @@
         width: 100%;
     }
     .wrapper-detail-description {
-        height: 42vh;
+        height: 425px;
     }
     .detail-description {
         width: 100%;
@@ -2275,12 +2344,15 @@
     }
     .reward-staked-info {
         width: 100%;
+        margin-top: 20px;
     }
     .nft-boost-detail {
         width: 100%;
     }
     .owner-info {
-        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
     }
     .reward-flex {
         display: block;
@@ -2302,7 +2374,7 @@
     }
     .description-company {
         margin-top: 10px;
-        width: 100%;
+        margin-left: 10px;
     }
     .close-staking-detail {
         display: flex;
@@ -2330,5 +2402,143 @@
         font-weight: 300;
         /* line-height: 14.06px; */
         padding-top: 15px;
+    }
+    .border-logo-owner {
+        width: 100px;
+        height: 100px;
+    }
+    .owner-img {
+        width: 100px;
+        margin-left: -25px;
+    }
+    #logo-owner-info {
+        width: 100px;
+        height: 100px;
+        margin-left: 12px;
+    }
+    #link-ggg {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 304px) and (min-width: 205px) {
+    .staking-detail {
+        height: auto;
+        background: black;
+        width: 100%;
+    }
+    .wrapper-detail {
+        height: 1490px;
+        width: 100%;
+        background-image: url('../../../assets//bg-2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .staking-detail-container {
+        display: flex;
+        width: 66%;
+        margin: auto;
+        margin-top: 80px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .left-detail-container {
+        width: 100%;
+    }
+    .right-detail-container {
+        width: 100%;
+    }
+    .wrapper-detail-description {
+        height: 470px;
+    }
+    .detail-description {
+        width: 100%;
+        margin-top: 20px;
+        height: 45%;
+    }
+    .detail-description-unstake {
+        width: 100%;
+        margin-top: 20px;
+        height: 45%;
+    }
+    .divider {
+        width: 100%;
+    }
+    .reward-staked-info {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .nft-boost-detail {
+        width: 100%;
+    }
+    .owner-info {
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .reward-flex {
+        display: block;
+    }
+    .nft-boost-detail {
+        display: block;
+    }
+    #staking-detail-text {
+        font-size: 26px;
+    }
+    .product-detail-container {
+        width: 100%;
+    }
+    .info-container {
+        width: 100%;
+    }
+    .collection-info {
+        width: 100%;
+    }
+    .description-company {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .close-staking-detail {
+        display: flex;
+        justify-content: space-between;
+        width: 75.6%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .close-form {
+        width: 30px;
+        height: 28px;
+    }
+    .logo-close {
+        width: 24px;
+        height: 24px;
+        text-align-last: center;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+    #back {
+        font-size: 16px;
+    }
+    #col-1-line1, #col-1-line2, #col-1-line3, #col-1-line4 {
+        font-size: 10px;
+        font-weight: 300;
+        /* line-height: 14.06px; */
+        padding-top: 15px;
+    }
+    .border-logo-owner {
+        width: 100px;
+        height: 100px;
+    }
+    .owner-img {
+        width: 100px;
+        margin-left: -25px;
+    }
+    #logo-owner-info {
+        width: 100px;
+        height: 100px;
+        margin-left: 12px;
+    }
+    #link-ggg {
+        font-size: 10px;
     }
 }

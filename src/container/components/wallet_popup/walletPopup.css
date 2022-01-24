@@ -1,9 +1,12 @@
 .pop-up {
     background: rgba(0, 0, 0, 0.44);
-    height: 950px;
+    height: 100vh;
     width: 100%;
-    position: absolute;
+    position:fixed; 
     top: 0;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
 
 .pop-up-content {
@@ -14,7 +17,11 @@
     box-sizing: border-box;
     border-radius: 10px;
     margin: auto;
-    margin-top: 180px;
+    position:fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-top: 180px; */
 }
 
 .top-space {
@@ -320,10 +327,10 @@
         margin-top: 5px;
     }
     .pop-up-content {
-        width: 370px;
+        width: 85%;
     }
     .large-box {
-        width: 320px;
+        width: 85%;
     }
     .border-box-wallet {
         width: 100%;
@@ -366,10 +373,10 @@
         margin-top: 5px;
     }
     .pop-up-content {
-        width: 300px;
+        width: 85%;
     }
     .large-box {
-        width: 280px;
+        width: 85%;
     }
     .border-box-wallet {
         width: 100%;
