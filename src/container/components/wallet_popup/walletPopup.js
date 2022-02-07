@@ -28,11 +28,6 @@ export default function WalletPopup({ buttonWallet }) {
             logo: Ggg,
             link: "/",
         },
-        {
-            name: "Portis",
-            logo: Ggg,
-            link: "/",
-        },
     ];
     return (
         <div className="pop-up">
@@ -50,14 +45,15 @@ export default function WalletPopup({ buttonWallet }) {
                     <img src={Line} alt="" className="divider-wallet" />
                     <div className="large-box">
                         <div className="small-box">
-                            <div className="top-space"></div>
                             {
                                 listWallet.map((el, idx) => {
                                     return (
                                         <div className="border-box-wallet" key={idx}>
                                             <div className="wrapper-box-wallet">
+                                                <div style={{textAlign: 'center'}}>
+                                                    <img src={el.logo} alt="" className="list-logo" />
+                                                </div>
                                                 <Typography id="title-box-wallet">{el.name}</Typography>
-                                                <img src={el.logo} alt="" />
                                             </div>
                                         </div>
                                     )
